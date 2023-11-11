@@ -72,7 +72,7 @@ text-align: center;
 
 
  /* Diseño Responsivo */
- @media screen and (max-width: 1000 px) {
+ @media screen and (max-width: 1000px) {
           .navbar-brand {
                     display: none;
           }
