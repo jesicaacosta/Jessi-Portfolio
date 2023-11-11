@@ -9,7 +9,22 @@ section {
           margin: 20px auto;
 }
 h1 {
-          font-size: 2.3rem;
+          font-size: 2rem;
+          font-family: 'Glegoo', serif;
+}
+h2 {
+          text-align: center;
+          font-size: 1.2rem;
+          color: #4d4d4d;
+          font-family: 'Glegoo', serif;
+}
+section p{
+          font-size: 1.2rem;
+          font-family: 'Montserrat', sans-serif;
+}
+.seccion-oscura {
+          background-color: black;
+          color: white;
 }
 /* Barra de navegacion */
  .navbar {
@@ -34,24 +49,30 @@ text-align: center;
 .hero-principal{
           padding: 3rem;
 }
-.hero-principal h1 {
-          font-size: 1.5rem;
-          font-family: 'Glegoo', serif;
-}
-h2 {
-          text-align: center;
-          font-size: 1.2rem;
-          color: #4d4d4d;
-          font-family: 'Glegoo', serif;
-}
+
 
 .hero-principal-img {
           max-width: 100%;
           padding: 10px;
 }
 
+
+
+/*Sobre mi */
+
+.seccion-sobremi {
+          height: 500px;
+          padding: 10px;
+}
+
+.seccion-sobremi .contenedor { /* Contenedor dentro de sobre mi */
+          max-width: 600px;
+          text-align: center;
+}
+
+
  /* Diseño Responsivo */
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 1000 px) {
           .navbar-brand {
                     display: none;
           }
