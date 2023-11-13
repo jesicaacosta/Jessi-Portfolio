@@ -18,7 +18,9 @@ h2 {
           color: #4d4d4d;
           font-family: 'Manrope', sans-serif;}
 h3 {
-          font-family: 'Manrope', sans-serif;}
+          font-family: 'Manrope', sans-serif;
+}
+
 section p{
           font-size: 1.1rem;
           font-family: 'Rubik', sans-serif;
@@ -28,6 +30,12 @@ section p{
           background-color: black;
           color: white;
 }
+
+.seccion-clara {
+          background-color: #ffffff;
+          color: black;
+}
+
 /* Barra de navegacion */
  .navbar {
           padding: 3rem;
@@ -74,22 +82,90 @@ text-align: center;
 
 /*Seccion Proyectos*/
 
-.seccion-clara {
-          color: black;
-          background-color: #ffe8f3;
+.experiencia {
+          display: flex;
+          flex-direction: column;
+}
+.experiencia .columna-exp {
+          padding: 20px;
+          transition: all .2s ease-in;
+
 }
 
 .columna-exp i{
           background-color: black;
           color: hotpink;
-          font-size: 2.5rem;
+          font-size: 2rem;
           padding: 14px 20px;
           border-radius: 50%;
 }
 .columna-exp h3 {
           padding: 20px;
-
 }
+.exp-badge-contenedor {
+          font-size: 1.1rem;
+          margin: 10px  0;
+}
+.badge { 
+          margin: 5px;
+}
+
+.experiencia .columna-exp:hover {
+          background-color: black;
+          color: #ffe8f3;
+}
+
+
+
+
+/* Proyectos recientes */
+
+.proyectos-recientes img {
+          height: 100%;
+          width: 100%;
+          padding: 10px;
+          border-radius: 10px;
+          display: block;
+          transition: all .2s ease;
+      }
+      
+      .proyectos-contenedor {
+          padding-top: 60px;
+          margin-bottom: 40px;
+      }
+      
+      .overlay {
+          transition: all .2s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+      }
+      
+      .overlay p {
+          font-size: 20px;
+      }
+.overlay i {
+          font-size: 2.5rem;
+          color: hotpink;
+          margin: 0 20px;
+}
+      .proyecto {
+          position: relative;
+      }
+      
+      /* Cursor sobre proyecto, overlay hace: */
+      .proyecto:hover .overlay {
+          opacity: 1;
+      }
+      
+      /* Cursor sobre proyecto, img hace: */
+      .proyecto:hover img {
+          opacity: .2;
+      }
+      
 
 
  /* Diseño Responsivo */
