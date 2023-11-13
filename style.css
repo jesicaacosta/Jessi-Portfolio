@@ -185,5 +185,8 @@ text-align: center;
                     max-width: 70%;
                     margin: 0 auto;
           }
+          .proyectos-recientes {
+            width: 100%;
+          }
  }
  
