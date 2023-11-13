@@ -167,6 +167,11 @@ text-align: center;
       }
       
 
+      /**/
+      .carouselMetas {
+        width: 60%;
+      }
+
 
  /* Diseño Responsivo */
  @media screen and (max-width: 1100px) { /* Desde esta dimension*/
