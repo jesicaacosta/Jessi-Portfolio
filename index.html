@@ -38,7 +38,7 @@
                     </a>
                     <ul class="navbar-nav d-flex justify-content-center  align-items-center">
                          <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mi</a>
                          </li>
                          <li class="nav-item">
                               <a class="nav-link" href="#">Proyectos</a>
@@ -75,7 +75,7 @@
      <!-- Seccion Sobre Mi -->
      <section class="seccion-sobremi seccion-oscura">
           <div class="contenedor">
-               <h2 class="seccion-h2">Datos sobre mi</h2>
+               <h2 class="seccion-h2" id="sobre_mi">Datos sobre mi</h2>
                <p class="seccion-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eaque molestiae rem
                     temporibus. Eius quam vitae quas natus voluptatem, ratione quibusdam. Ipsa blanditiis aspernatur
                     voluptatibus. Aliquid laudantium accusantium minima pariatur?</p>
@@ -190,8 +190,32 @@
      </section>
 
 
+<section class="formulario" >
+     <h2>Contactame! </h2>
+     <form id="contactForm">
+          <label for="name">Tu nombre? </label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Un Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Dejame un mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <button type="button" onclick="enviarMensaje()" class="contactForm_button">Enviar! </button>
+      </form>
+</section>
 
 
+<footer class="text-center mt-5">
+     <p>&copy; 2023 Jesica Acosta - Desarrolladora Full Stack</p>
+     <div class="social-icons">
+         <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+         <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a>
+         <a href="#" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+     </div>
+ </footer>
+ 
 
      <!--Bootstrap para JS-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
