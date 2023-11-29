@@ -246,16 +246,57 @@ footer p {
 
 
  /* Diseño Responsivo */
- @media screen and (max-width: 1100px) { /* Desde esta dimension*/
-          .navbar-brand {
-                    display: none;
-          }
- }
+/* Diseño Responsivo */
+@media screen and (max-width: 768px) {
+    /* Ajustes generales para pantallas más pequeñas */
+    body {
+        font-size: 14px;
+    }
 
- @media screen and (min-width: 768px) { /* Hasta esta dimension*/
-          .hero-inferior {
-                    max-width: 70%;
-                    margin: 0 auto;
-          }
- }
- 
+    /* Sección Hero */
+    .hero {
+        min-height: 200px;
+    }
+
+    .hero-principal {
+        padding: 0.5rem;
+    }
+
+    .hero-principal-img {
+        width: 100px;
+    }
+
+    /* Barra de navegación */
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    /* Sección Sobre Mí */
+    .seccion-sobremi {
+        padding: 0.5rem;
+    }
+
+    .seccion-p {
+        font-size: 1rem;
+    }
+
+    /* Sección Proyectos */
+    .experiencia .columna-exp {
+        padding: 5px;
+    }
+
+    .columna-exp i {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+
+    .columna-exp h3 {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    /* Formulario */
+    .formulario {
+        max-width: 100%;
+    }
+}
