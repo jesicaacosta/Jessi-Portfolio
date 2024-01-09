@@ -24,187 +24,208 @@ h2 {
     font-family: 'Manrope', sans-serif;
 }
 
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* Barra de navegacion */
+/* Barra de navegacion */
 
-nav {
-    padding: 20px;
-    position: fixed;
-    top: 0;
+.navbar {
     height: 10vh;
-    background-color: #ffe8f3;
+    width: 100%;
 }
 
-.listaLinks {
-    font-size: 1.2em;
+.navbar-nav {
+    display: flex;
+    justify-content: space-around; /* Distribuir enlaces horizontalmente */
+    align-items: center;
+    height: 100%;
+    background-color: #212529;
+    padding: 5px 10px;
+    color: #ffffff;
 }
 
-.listaLinks li:hover {
-    font-weight: bold;
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
 }
-/*Seccion Hero  */
+
+.nav-link:hover {
+    background-color: #d33a89;
+}
+
+
+
+
+
+.hero {
+    background-color: #f8f9fa; /* Color de fondo claro para la sección del héroe */
+    padding: 40px 0;
+}
 
 .hero-principal {
-    padding: 3em;
-    min-height: 450px;
     text-align: center;
-    position: relative;
-    top: 10px;
-
 }
 
 .hero-principal-img {
-    max-width: 100%;
-    padding: 10px;
-
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
-
-
-
-/*Sobre mi */
 
 .seccion-sobremi {
-    height: 500px;
-    padding: 10px;
+    background-color: #212529; /* Color de fondo oscuro para la sección "Sobre Mi" */
+    color: #ffffff; /* Color de texto blanco para la sección "Sobre Mi" */
+    padding: 40px 0;
 }
 
-.seccion-sobremi .contenedor {
-    max-width: 600px;
-    text-align: center;
+.seccion-oscura {
+    background-color: #343a40; /* Color de fondo oscuro para secciones oscuras */
+    color: #ffffff; /* Color de texto blanco para secciones oscuras */
+}
+
+.seccion-h2 {
+    color: #d33a89; /* Color rosa para los encabezados de sección */
 }
 
 .seccion-p {
-    font-size: 1.2rem;
-}
-
-/*Seccion Proyectos*/
-
-.resumen div {
-    padding: 20px 5px;
-}
-
-
-
-/* Proyectos recientes */
-
-.proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all .2s ease;
-}
-
-.proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-}
-
-.overlay {
-    transition: all .2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
-.overlay p {
-    font-size: 20px;
+.resumen {
+    padding: 40px 0;
 }
 
-.overlay i {
-    font-size: 2.5rem;
-    margin: 0 20px;
+.columna-exp {
+    margin-bottom: 20px;
+}
+
+.exp-badge-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge {
+    margin: 5px;
+}
+
+.proyectos-recientes {
+    background-color: #f8f9fa; /* Color de fondo claro para la sección "Proyectos Recientes" */
+    padding: 40px 0;
+}
+
+.proyectos-contenedor {
+    margin-top: 20px;
 }
 
 .proyecto {
     position: relative;
 }
 
-/* Cursor sobre proyecto, overlay hace: */
-.proyecto:hover .overlay {
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.overlay:hover {
     opacity: 1;
 }
 
-/* Cursor sobre proyecto, img hace: */
-.proyecto:hover img {
-    opacity: .2;
+.overlay a {
+    color: #ffffff; /* Color blanco para los iconos de la superposición */
+    font-size: 2em;
+    margin: 0 10px;
 }
 
-
-
-.carouselMetas {
-    width: 60%;
-}
-
-
-/*Formulario*/
 .formulario {
-    max-width: 600px;
+    color: #d33a89; /* Color de texto blanco para la sección del formulario de contacto */
+    padding: 40px 0;
+}
+
+#contactForm {
+    max-width: 400px;
     margin: 0 auto;
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d33a89; /* Color rosa para las etiquetas */
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #d33a89; /* Color de borde rosa para los campos de entrada */
+    border-radius: 5px;
 }
 
-.contactForm_button {
-    background-color: #FF7F50;
-    color: #FFF;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
+button {
     cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d33a89; /* Color de fondo rosa para los botones */
+    color: #ffffff; /* Color de texto blanco para los botones */
+    font-size: 1em;
+    margin-right: 10px;
 }
 
-.contactForm_button:hover {
-    background-color: #fd5f26;
-    font-weight: bold;
+button a {
+    color: #ffffff; /* Color blanco para los enlaces de los botones */
+    text-decoration: none;
 }
 
+button:hover {
+    background-color: #ffffff; /* Color de fondo blanco para los botones al pasar el mouse */
+    color: #d33a89; /* Color rosa para el texto de los botones al pasar el mouse */
+}
 
-
-
-/* Estilos para el footer */
 footer {
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    background-color: #343a40; 
+    color: #ffffff; 
+    padding: 20px 0;
 }
 
 .social-icons a {
-    color: #4d4d4d;
+    color: #d33a89; 
+    font-size: 1.5em;
     margin: 0 10px;
-    font-size: 1.5rem;
 }
 
-/* Estilos para el formulario de contacto en el footer */
-.formulario {
-    margin-top: 20px;
+.social-icons a:hover {
+    color: #ffffff; 
 }
-
-
-
-
-
-
-
-
-/* Diseño Responsivo */
