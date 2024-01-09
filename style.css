@@ -235,39 +235,17 @@ footer p {
 
 /* Diseño Responsivo */
 @media screen and (max-width: 768px) {
-    /* Ajustes generales para pantallas más pequeñas */
-    body {
-        font-size: 14px;
+    .navbar-collapse {
+        position: absolute;
+        top: 90px; /* Ajusta según el tamaño de tu barra de navegación fija */
+        left: 0;
+        right: 0;
+        background-color: #ffe8f3;
+        padding: 40px auto;
+        width: 100vw;
     }
 
-    /* Sección Hero */
-    .hero {
-        min-height: 200px;
-    }
-
-    .hero-principal {
-        padding: 0.5rem;
-    }
-
-    .hero-principal-img {
-        width: 100px;
-    }
-
-    /* Barra de navegación */
-    .navbar-brand {
-        font-size: 1rem;
-    }
-
-    /* Sección Sobre Mí */
-    .seccion-sobremi {
-        padding: 0.5rem;
-    }
-
-    .seccion-p {
-        font-size: 1rem;
-    }
-    /* Formulario */
-    .formulario {
-        max-width: 100%;
+    .navbar-nav {
+        text-align: left;
     }
 }
