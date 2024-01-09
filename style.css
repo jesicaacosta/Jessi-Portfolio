@@ -246,7 +246,8 @@ footer p {
         background-color: #ffe8f3;
         padding: 40px auto;
         width: 100vw;
-        height: 50vh;
+        z-index: 900;
+        text-align: right;
     }
 
     .navbar-nav {
