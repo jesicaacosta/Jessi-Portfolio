@@ -1,10 +1,7 @@
 /* Estilos generales */
-body {
-    font-size: 20px;
-}
-
-p {
-    font-size: 1.2em;
+* {
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
 section {
@@ -16,76 +13,50 @@ section {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2em;
     font-family: 'Glegoo', serif;
 }
 
 h2 {
     text-align: center;
     font-size: 1.4rem;
-    color: #4d4d4d;
+    color: #d33a89;
     font-family: 'Manrope', sans-serif;
 }
-
-h3 {
-    font-family: 'Manrope', sans-serif;
-}
-
-section p {
-    font-size: 1rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 100;
-}
-
-.seccion-oscura {
-    background-color: black;
-    color: white;
-}
-
-.seccion-clara {
-    background-color: #ffffff;
-    color: black;
-}
-
-
 
 
 /* Barra de navegacion */
-.nav-fijo {
-    padding: 3rem;
-    background-color: #ffe8f3;
-    top: 0;
+
+nav {
+    padding: 20px;
     position: fixed;
+    top: 0;
     height: 10vh;
-    z-index: 1;
-}
-
-.nav-fijo {
     background-color: #ffe8f3;
-
 }
 
-.navbar-collapse {
-    align-items: center;
-    justify-content: space-between;
+.listaLinks {
+    font-size: 1.2em;
 }
 
+.listaLinks li:hover {
+    font-weight: bold;
+}
 /*Seccion Hero  */
 
-.hero {
+.hero-principal {
+    padding: 3em;
     min-height: 450px;
     text-align: center;
-}
+    position: relative;
+    top: 10px;
 
-.hero-principal {
-    padding: 3rem;
-    margin-top: 50px;
 }
-
 
 .hero-principal-img {
     max-width: 100%;
     padding: 10px;
+
 }
 
 
@@ -111,15 +82,6 @@ section p {
 .resumen div {
     padding: 20px 5px;
 }
-
-.seccion-estudios:hover,
-.seccion-lenguajes:hover,
-.seccion-conocimientos:hover {
-    background-color: black;
-    color: #FFF;
-}
-
-
 
 
 
@@ -155,7 +117,6 @@ section p {
 
 .overlay i {
     font-size: 2.5rem;
-    color: hotpink;
     margin: 0 20px;
 }
 
@@ -174,7 +135,7 @@ section p {
 }
 
 
-/**/
+
 .carouselMetas {
     width: 60%;
 }
@@ -219,7 +180,6 @@ textarea {
 
 /* Estilos para el footer */
 footer {
-    background-color: #ffe8f3;
     padding: 20px;
     text-align: center;
 }
@@ -248,20 +208,3 @@ footer p {
 
 
 /* Diseño Responsivo */
-@media screen and (max-width: 768px) {
-    .navbar-collapse {
-        position: absolute;
-        top: 90px;
-        /* Ajusta según el tamaño de tu barra de navegación fija */
-        left: 0;
-        right: 0;
-        background-color: #ffe8f3;
-        padding: 40px auto;
-        width: 100vw;
-        z-index: 900;
-    }
-
-    .navbar-nav {
-        text-align: left;
-    }
-}
