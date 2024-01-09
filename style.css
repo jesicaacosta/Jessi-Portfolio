@@ -1,3 +1,24 @@
+/* X-Small devices (portrait phones, less than 576px)
+/* No media query for `xs` since this is the default in Bootstrap
+
+mall devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+ X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+/XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { ... }*/
+
+
+
+
 /* Estilos generales */
 * {
     box-sizing: border-box;
@@ -15,6 +36,7 @@ section {
 h1 {
     font-size: 2em;
     font-family: 'Glegoo', serif;
+    color: #d33a89;
 }
 
 h2 {
@@ -36,13 +58,16 @@ body {
     padding: 0;
 }
 
+.badge.bg-info {
+    font-size: 1.2em; /* Puedes ajustar el valor según tus necesidades */
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 
-/* Barra de navegacion */
 /* Barra de navegacion */
 
 .navbar {
@@ -71,11 +96,9 @@ body {
 }
 
 
-
-
+/**/
 
 .hero {
-    background-color: #f8f9fa; /* Color de fondo claro para la sección del héroe */
     padding: 40px 0;
 }
 
@@ -91,38 +114,21 @@ body {
 .seccion-sobremi {
     background-color: #212529; /* Color de fondo oscuro para la sección "Sobre Mi" */
     color: #ffffff; /* Color de texto blanco para la sección "Sobre Mi" */
-    padding: 40px 0;
-}
-
-.seccion-oscura {
-    background-color: #343a40; /* Color de fondo oscuro para secciones oscuras */
-    color: #ffffff; /* Color de texto blanco para secciones oscuras */
-}
-
-
-.contenedor {
+    padding: 40px;
     text-align: center;
-    padding: 10px  50px;
 }
 
-.resumen {
-    padding: 40px 0;
+.seccion-sobremi:hover {
+    background-color: #d33a89;
+    color: #fff;
 }
 
-.columna-exp {
-    margin-bottom: 20px;
-}
 
-.exp-badge-contenedor {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+/*Cards*/
 
-.badge {
-    margin: 5px;
-}
 
+
+/* GITHUB */
 .proyectos-recientes {
     background-color: #f8f9fa; /* Color de fondo claro para la sección "Proyectos Recientes" */
     padding: 40px 0;
