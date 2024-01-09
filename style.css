@@ -1,84 +1,91 @@
-
 /* Estilos generales */
 body {
     font-size: 20px;
 }
+
 p {
     font-size: 1.2em;
 }
+
 section {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          margin: 20px auto;
-}
-h1 {
-          font-size: 2.5rem;
-          font-family: 'Glegoo', serif;
-}
-h2 {
-          text-align: center;
-          font-size: 1.4rem;
-          color: #4d4d4d;
-          font-family: 'Manrope', sans-serif;}
-h3 {
-          font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
 }
 
-section p{
-          font-size: 1rem;
-          font-family: 'Rubik', sans-serif;
-          font-weight: 100;
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Glegoo', serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+    font-family: 'Manrope', sans-serif;
+}
+
+h3 {
+    font-family: 'Manrope', sans-serif;
+}
+
+section p {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
 }
 
 .seccion-oscura {
-          background-color: black;
-          color: white;
+    background-color: black;
+    color: white;
 }
 
 .seccion-clara {
-          background-color: #ffffff;
-          color: black;
+    background-color: #ffffff;
+    color: black;
 }
 
 
 
 
 /* Barra de navegacion */
- .nav-fijo {
-          padding: 3rem;
-          background-color: #ffe8f3;
-          top: 0 ;
-          position: fixed;
-          height: 10vh;
-          z-index: 1;
- }
+.nav-fijo {
+    padding: 3rem;
+    background-color: #ffe8f3;
+    top: 0;
+    position: fixed;
+    height: 10vh;
+    z-index: 1;
+}
 
- .nav-fijo {
+.nav-fijo {
     background-color: #ffe8f3;
 
- }
- .navbar-collapse {
-          align-items: center;
-          justify-content: space-between;
- }
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
 
 /*Seccion Hero  */
 
 .hero {
-min-height: 450px;
-text-align: center;
+    min-height: 450px;
+    text-align: center;
 }
 
-.hero-principal{
-          padding: 3rem;
+.hero-principal {
+    padding: 3rem;
+    margin-top: 50px;
 }
 
 
 .hero-principal-img {
-          max-width: 100%;
-          padding: 10px;
+    max-width: 100%;
+    padding: 10px;
 }
 
 
@@ -86,14 +93,15 @@ text-align: center;
 /*Sobre mi */
 
 .seccion-sobremi {
-          height: 500px;
-          padding: 10px;
+    height: 500px;
+    padding: 10px;
 }
 
-.seccion-sobremi .contenedor { 
-          max-width: 600px;
-          text-align: center;
+.seccion-sobremi .contenedor {
+    max-width: 600px;
+    text-align: center;
 }
+
 .seccion-p {
     font-size: 1.2rem;
 }
@@ -104,8 +112,9 @@ text-align: center;
     padding: 20px 5px;
 }
 
-.seccion-estudios:hover, .seccion-lenguajes:hover , 
-.seccion-conocimientos:hover{
+.seccion-estudios:hover,
+.seccion-lenguajes:hover,
+.seccion-conocimientos:hover {
     background-color: black;
     color: #FFF;
 }
@@ -117,56 +126,58 @@ text-align: center;
 /* Proyectos recientes */
 
 .proyectos-recientes img {
-          height: 100%;
-          width: 100%;
-          padding: 10px;
-          border-radius: 10px;
-          display: block;
-          transition: all .2s ease;
-      }
-      
-      .proyectos-contenedor {
-          padding-top: 60px;
-          margin-bottom: 40px;
-      }
-      
-      .overlay {
-          transition: all .2s ease;
-          opacity: 0;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          text-align: center;
-      }
-      
-      .overlay p {
-          font-size: 20px;
-      }
-.overlay i {
-          font-size: 2.5rem;
-          color: hotpink;
-          margin: 0 20px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all .2s ease;
 }
-      .proyecto {
-          position: relative;
-      }
-      
-      /* Cursor sobre proyecto, overlay hace: */
-      .proyecto:hover .overlay {
-          opacity: 1;
-      }
-      
-      /* Cursor sobre proyecto, img hace: */
-      .proyecto:hover img {
-          opacity: .2;
-      }
-      
 
-      /**/
-      .carouselMetas {
-        width: 60%;
-      }
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 20px;
+}
+
+.overlay i {
+    font-size: 2.5rem;
+    color: hotpink;
+    margin: 0 20px;
+}
+
+.proyecto {
+    position: relative;
+}
+
+/* Cursor sobre proyecto, overlay hace: */
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+/* Cursor sobre proyecto, img hace: */
+.proyecto:hover img {
+    opacity: .2;
+}
+
+
+/**/
+.carouselMetas {
+    width: 60%;
+}
 
 
 /*Formulario*/
@@ -240,14 +251,14 @@ footer p {
 @media screen and (max-width: 768px) {
     .navbar-collapse {
         position: absolute;
-        top: 90px; /* Ajusta según el tamaño de tu barra de navegación fija */
+        top: 90px;
+        /* Ajusta según el tamaño de tu barra de navegación fija */
         left: 0;
         right: 0;
         background-color: #ffe8f3;
         padding: 40px auto;
         width: 100vw;
         z-index: 900;
-        text-align: right;
     }
 
     .navbar-nav {
