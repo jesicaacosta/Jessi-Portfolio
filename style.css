@@ -28,6 +28,7 @@ section p{
           font-family: 'Rubik', sans-serif;
           font-weight: 100;
 }
+
 .seccion-oscura {
           background-color: black;
           color: white;
@@ -37,6 +38,9 @@ section p{
           background-color: #ffffff;
           color: black;
 }
+
+
+
 
 /* Barra de navegacion */
  .nav-fijo {
@@ -83,7 +87,7 @@ text-align: center;
           padding: 10px;
 }
 
-.seccion-sobremi .contenedor { /* Contenedor dentro de sobre mi */
+.seccion-sobremi .contenedor { 
           max-width: 600px;
           text-align: center;
 }
@@ -91,41 +95,20 @@ text-align: center;
     font-size: 1.2rem;
 }
 
-
 /*Seccion Proyectos*/
 
-.experiencia {
-          display: flex;
-          flex-direction: column;
-}
-.experiencia .columna-exp {
-          padding: 20px;
-          transition: all .2s ease-in;
-
+.resumen div {
+    padding: 20px 5px;
 }
 
-.columna-exp i {
-          background-color: black;
-          color: hotpink;
-          font-size: 2.5rem;
-          padding: 14px 20px;
-          border-radius: 50%;
-}
-.columna-exp h3 {
-          padding: 20px;
-}
-.exp-badge-contenedor {
-          font-size: 1.1rem;
-          margin: 10px  0;
-}
-.badge { 
-          margin: 5px;
+.seccion-estudios:hover, .seccion-lenguajes:hover , 
+.seccion-conocimientos:hover{
+    background-color: black;
+    color: #FFF;
 }
 
-.experiencia .columna-exp:hover {
-          background-color: black;
-          color: #ffe8f3;
-}
+
+
 
 
 /* Proyectos recientes */
@@ -218,7 +201,7 @@ textarea {
 }
 
 
-/*Footer*/
+
 
 /* Estilos para el footer */
 footer {
@@ -245,7 +228,11 @@ footer p {
 
 
 
- /* Diseño Responsivo */
+
+
+
+
+
 /* Diseño Responsivo */
 @media screen and (max-width: 768px) {
     /* Ajustes generales para pantallas más pequeñas */
@@ -279,22 +266,6 @@ footer p {
     .seccion-p {
         font-size: 1rem;
     }
-
-    /* Sección Proyectos */
-    .experiencia .columna-exp {
-        padding: 5px;
-    }
-
-    .columna-exp i {
-        font-size: 1.5rem;
-        padding: 5px;
-    }
-
-    .columna-exp h3 {
-        padding: 5px;
-        font-size: 1rem;
-    }
-
     /* Formulario */
     .formulario {
         max-width: 100%;
