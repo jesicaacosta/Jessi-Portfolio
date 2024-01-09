@@ -99,12 +99,10 @@ body {
     color: #ffffff; /* Color de texto blanco para secciones oscuras */
 }
 
-.seccion-h2 {
-    color: #d33a89; /* Color rosa para los encabezados de sección */
-}
 
-.seccion-p {
+.contenedor {
     text-align: center;
+    padding: 10px  50px;
 }
 
 .resumen {
