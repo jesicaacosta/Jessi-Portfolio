@@ -157,8 +157,14 @@ body {
 .overlay a {
     color: #ffffff; /* Color blanco para los iconos de la superposición */
     font-size: 2em;
-    margin: 0 10px;
+    margin: auto 50%x;
 }
+
+.icono-github, .icono-browser {
+          font-size: 3em; 
+          margin: auto 20px;
+     }
+
 
 .formulario {
     color: #d33a89; /* Color de texto blanco para la sección del formulario de contacto */
