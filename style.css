@@ -6,8 +6,12 @@
 }
 body {
     background-image: url(./images/fondo.jpg);
-}
 
+}
+main {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 30px;
+}
 h1,h2,p {
     color: #fff;
 }
@@ -105,7 +109,6 @@ h1,h2,p {
 .columna-exp{
     padding: 40px auto;
     margin: 20px;
-    background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     padding: 30px;
 }
@@ -130,7 +133,6 @@ h1,h2,p {
 }
 
 .seccion-sobremi {
-    background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     padding: 40px;
     text-align: center;
@@ -171,7 +173,6 @@ h1,h2,p {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,18 +190,21 @@ h1,h2,p {
     font-size: 2em;
     margin: auto 50%x;
 }
+.fa-brands {
+    font-size: 2em;
+    margin: auto 20px;
+    color: #FFF;
+}
 
-.icono-github, .icono-browser {
-          font-size: 3em; 
-          margin: auto 20px;
-     }
+.fa-brands:hover {
+    color: #fd3b00;
+}
 
 
      /* CONTACTO */
 .formulario {
     color: #fff; /* Color de texto blanco para la sección del formulario de contacto */
     padding: 40px 0;
-    background: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
 
