@@ -15,7 +15,15 @@ main {
 h1,h2,p {
     color: #fff;
 }
-
+p {
+    font-size: 1.1em;
+}
+a:link, a:visited, a:active ,i {
+    text-decoration:none;
+    color: #23d5ab;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
 /* Contenedor del icono */
 #scroll-to-top {
     position: fixed;
@@ -151,24 +159,15 @@ h1,h2,p {
 
 
 /* GITHUB */
-.proyectos-recientes {
-    padding: 40px 0;
-    text-align: center;
+
+.proyectos-div {
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
 }
 
-.proyectos-contenedor {
-    margin-top: 20px;
 
-}
 
-.proyecto {
-    position: relative;
-}
 
-.proyecto img {
-    width: 100%;
-    border-radius: 10px;
-}
 
 
 /* CONTACTO */
