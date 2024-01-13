@@ -30,6 +30,10 @@
      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap" rel="stylesheet">
 
+     <!--iconos awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
 </head>
 
 <body>
@@ -64,12 +68,20 @@
      </nav>
 
 
+<main>
+
+
+<!-- Contenedor del icono -->
+<div id="scroll-to-top" onclick="scrollToTop()">
+     <i class="fas fa-chevron-up"></i>
+ </div>
+ 
 
      <!--Seccion nombre -->
      <section class="nombre align-items-stretch">
           <div class="nombre-principal d-flex flex-column justify-content-center align-items-center">
                <img class="nombre-principal-img" src="images/CV.png" alt="Foto de desarrollo web" width="400px">
-                    <h1> Hola, soy Jesica Acosta</h1>
+                    <h1 class="animado"> Hola, soy Jesica Acosta</h1>
                <h2>  🤖  Full Stack Developer  🤖 </h2>
           </div>
      </section>
@@ -92,32 +104,40 @@
           </div>
      </section>
 
-     <!-- Experiencia Laboral -->
-<div>
-              <!-- Experiencia Laboral -->
-              <div class="columna-exp col mb-3 mr-3">
-               <div class="exp-badge-contenedor">
-                 <h1>🤖 Experiencia laboral </h1>
-                   <span class="badge bg-info">MOON AGENDAS</span>
-                   <p>Diseño para maquetación vectorial. Envíos y coordinación de pedidos</p>
-                   <span class="badge bg-info">STAFF TECHNOLOGY</span>
-                   <p>Atención a clientes por reclamos o instalaciones del servicio. </p>
-                   <p>Llamadas salientes para ofrecer el servicio.  </p>
-                   <span class="badge bg-info">LÓPEZ DIGITAL </span>
-                   <p>Atención en local comercial.</p>
+          <!-- Mi proyectos en Git Hub -->
+          <section class="text-align proyectos-recientes d-flex flex-column justify-content-center align-items-center animado" id="proyectos">
+               <div>
+                    <h2>Mis proyectos en GitHub</h2>
+                    <!-- Galería de proyectos-->
+                    <div class="container text-center proyectos-contenedor">
+                         <div class="row">
+                              <div class="col-ext">
+                                   <div class="proyecto">
+                                        <img src="images/laptop.png" alt="Proyecto de página de ropa">
+                                        <div class="overlay">
+                                             <a href="https://github.com/jesicadaiana" target="_blank"
+                                                  rel="noopener noreferrer"> <i class="bi bi-github icono-github"></i></a>
+                                             <a href="https://jesicadaiana.github.io/pagTimeless/" target="_blank"><i
+                                                       class="bi bi-browser-chrome icono-browser"></i>
+                                             </a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
                </div>
-           </div>
-</div>
-
+          </section>
+          
 <!-- Formación -->
-<div id="estudios"> <hr> </div>
+<hr id="estudios">
+
 <section class="container-fluid seccion-exper ">
      <div class="row d-flex flex-row justify-content-center align-items-center">
          <div class="columna-exp col mb-3 mr-3" >
           <h1>🤖 Estudios </h1>
-             <span class="badge bg-info">🔋 TECN. EN PROGRAMACIÓN</span>
+             <span class="badge bg-black">🔋 TECN. EN PROGRAMACIÓN</span>
              <p>Univ. Tecnológica Nacional (UTN)</p>
-             <span class="badge bg-info"> 🔋 INGENIERIA EN MECATRÓNICA</span>
+             <span class="badge bg-black"> 🔋 INGENIERIA EN MECATRÓNICA</span>
              <p>Univ. Nacional de Lomas de Zamora</p>
              <p>14 de 20 materias promocionadas. Primer año</p>
          </div>
@@ -126,73 +146,65 @@
          <div class="columna-exp col mb-3 mr-3">
              <h1>🤖 Lenguajes de Programación</h1>
              <div class="exp-badge-contenedor">
-                 <span class="badge bg-info">HTML Y CSS</span>
-                 <span class="badge bg-info">Python</span>
-                 <span class="badge bg-info">Javascript</span>
+                 <span class="badge bg-black">HTML Y CSS</span>
+                 <span class="badge bg-black">Python</span>
+                 <span class="badge bg-black">Javascript</span>
              </div>
          </div>
  
          <!-- Frameworks -->
          <div class="columna-exp col mb-3 mr-3">
              <h1>🤖 Frameworks</h1>
-             <div class="exp-badge-contenedor">
-                 <span class="badge bg-info">Vue</span>
-                 <span class="badge bg-info">Bootstrap</span>
+             <div>
+                 <span class="badge bg-black">Vue</span>
+                 <span class="badge bg-black">Bootstrap</span>
              </div>
          </div>
  
      </div>
  </section>
  
- 
+ <hr id="experienciaLab">
+      <!-- Experiencia Laboral -->
+      <div class="columna-exp col d-flex flex-column justify-content-center align-items-center mr-4">
+          <h1>🤖 Experiencia laboral </h1> <br><br>
+            <span class="badge bg-black">MOON AGENDAS</span> <br>
+            <p>Diseño para maquetación vectorial. Envíos y coordinación de pedidos</p>
+            <span class="badge bg-black">STAFF TECHNOLOGY</span> <br>
+            <p>Atención a clientes por reclamos o instalaciones del servicio. </p>
+            <p>Llamadas salientes para ofrecer el servicio.  </p>
+            <span class="badge bg-black">LÓPEZ DIGITAL </span> <br>
+            <p>Atención en local comercial.</p>
+    </div>
 
+    <section class="formulario" id="contacto">
+     <h2 class="animado">Contactame ✉︎</h2> <br>
+     <div class="row d-flex flex-row justify-content-center align-items-center">
 
+          <div class="col-12 col-md-6 col-Formul">
+               <form id="contactForm">
+                    <label for="name">Tu nombre: </label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="email">Un Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
 
-     <!-- Mi proyectos en Git Hub -->
-     <section class="text-align proyectos-recientes d-flex flex-column" id="proyectos">
-          <div>
-               <h2>Mis proyectos en GitHub</h2>
-               <!-- Galería de proyectos-->
-               <div class="container text-center proyectos-contenedor">
-                    <div class="row">
-                         <div class="col-ext">
-                              <div class="proyecto">
-                                   <img src="images/laptop.png" alt="Proyecto de página de ropa">
-                                   <div class="overlay">
-                                        <a href="https://github.com/jesicadaiana" target="_blank"
-                                             rel="noopener noreferrer"> <i class="bi bi-github icono-github"></i></a>
-                                        <a href="https://jesicadaiana.github.io/pagTimeless/" target="_blank"><i
-                                                  class="bi bi-browser-chrome icono-browser"></i>
-                                        </a>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-               </div>
+                    <label for="message">Dejame un mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="button" onclick="enviarMensaje()" class="contactForm_button" id="enviarBtn">Enviar
+                    </button>
+                    <button type="button" onclick="resetearFormulario()" class="contactForm_button"
+                         id="resetBtn">Reset</button>
+               </form>
           </div>
-     </section>
-     
 
-     <section class="formulario" id="contacto">
-          <h2>Contactame! </h2>
-          <form id="contactForm">
-               <label for="name">Tu nombre? </label>
-               <input type="text" id="name" name="name" required>
 
-               <label for="email">Un Correo Electrónico:</label>
-               <input type="email" id="email" name="email" required>
+     </div>
+</section>
 
-               <label for="message">Dejame un mensaje:</label>
-               <textarea id="message" name="message" rows="4" required></textarea>
 
-               <button type="button" onclick="enviarMensaje()" class="contactForm_button"
-                    id="enviarBtn">Enviar!</button>
-               <button type="button" onclick="resetearFormulario()" class="contactForm_button"
-                    id="resetBtn">Restablecer</button>
-          </form>
-     </section>
-
+</main>
 
      <footer class="text-center mt-5">
           <p>&copy; 2023 Jessi Dev - Desarrolladora Full Stack</p>

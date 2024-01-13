@@ -7,29 +7,32 @@
 body {
     background-image: url(./images/fondo.jpg);
 }
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto;
+
+
+
+/* Contenedor del icono */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e73c7e;
+    color: #ffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    width: 3em;
+    height: 3em;
 }
 
-h1 {
+#scroll-to-top i {
     font-size: 2em;
-    font-family: 'Glegoo', serif;
-    color: #d33a89;
 }
 
-h2 {
-    text-align: center;
-    font-size: 1.4rem;
-    color: #d33a89;
-    font-family: 'Manrope', sans-serif;
-}
+
 
 /*textoi de nombre animado */
-.nombre h1 {
+.animado {
     font-size: 3em;
     font-family: 'Public Sans', sans-serif;
     animation: fluido 10s ease-in-out infinite;
@@ -51,9 +54,16 @@ h2 {
     font-family: 'Public Sans', sans-serif;
 }
 
+/* Globos informatios */
+.badge.bg-black {
+    font-size: 1.2em;
+    outline: 1px solid #23d5ab;
+    padding: 10px;
+    transition: outline 0.3s, color 0.2s; 
+}
 
-.badge.bg-info {
-    font-size: 1.2em; /* Puedes ajustar el valor según tus necesidades */
+.bg-black:hover {
+    outline: 3px solid #23d5ab; /* Linea sin ocupar eespacio para que no se mueva el contenido */
 }
 
 .container {
@@ -63,10 +73,10 @@ h2 {
 
 
 /* Barra de navegacion */
-
 .navbar {
     height: 10vh;
     width: 100%;
+    position: fixed;
 }
 
 .navbar-nav {
@@ -76,17 +86,14 @@ h2 {
     height: 100%;
     background-color: #212529;
     padding: 5px 10px;
-    color: #ffffff;
+    position: relative;
+    top: 15px;
 }
 
 .nav-link {
     text-decoration: none;
     color: #ffffff;
     transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-    background-color: #d33a89;
 }
 
 
@@ -98,18 +105,20 @@ h2 {
 .columna-exp{
     padding: 40px auto;
     margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 30px;
 }
 
-
+.columna-exp h1 {
+    color: #fff;
+}
 .nombre {
     padding: 40px 0;
 }
 
 .nombre-principal {
     text-align: center;
-}
-.nombre-principal h1 {
-    color: #fff;
 }
 .nombre-principal h2 {
     color: #fff;
@@ -121,8 +130,8 @@ h2 {
 }
 
 .seccion-sobremi {
-    background-color: rgb(33, 37, 41, 0.3); /* Color de fondo oscuro para la sección "Sobre Mi" */
-    color: #ffffff; /* Color de texto blanco para la sección "Sobre Mi" */
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
     padding: 40px;
     text-align: center;
 }
@@ -131,15 +140,16 @@ h2 {
     background-color: rgb(211, 58, 137, 0.7);
     color: #fff;
 }
+.seccion-sobremi p {
+    font-size: 1.3em;
+    line-height: 3em;
 
-
-/*Cards*/
-
-
+}
 
 /* GITHUB */
 .proyectos-recientes {
     padding: 40px 0;
+    text-align: center;
 }
 
 .proyectos-contenedor {
@@ -186,16 +196,18 @@ h2 {
      }
 
 
+     /* CONTACTO */
 .formulario {
-    color: #d33a89; /* Color de texto blanco para la sección del formulario de contacto */
+    color: #fff; /* Color de texto blanco para la sección del formulario de contacto */
     padding: 40px 0;
-    background-color: #000000;
-
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 #contactForm {
     max-width: 400px;
     margin: 0 auto;
+    color: #23d5ab;
 }
 
 label {
@@ -209,7 +221,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #d33a89; /* Color de borde rosa para los campos de entrada */
+    border: 1px solid #ee7752; /* Color de borde rosa para los campos de entrada */
     border-radius: 5px;
 }
 
@@ -218,14 +230,14 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #d33a89; /* Color de fondo rosa para los botones */
+    background-color: #ee7752; /* Color de fondo rosa para los botones */
     color: #ffffff; /* Color de texto blanco para los botones */
     font-size: 1em;
     margin-right: 10px;
 }
 
 button a {
-    color: #ffffff; /* Color blanco para los enlaces de los botones */
+    color: #23a6d5; /* Color blanco para los enlaces de los botones */
     text-decoration: none;
 }
 
@@ -234,6 +246,9 @@ button:hover {
     color: #d33a89; /* Color rosa para el texto de los botones al pasar el mouse */
 }
 
+
+
+/* FOOTER */
 footer {
     background-color: #343a40; 
     color: #ffffff; 
