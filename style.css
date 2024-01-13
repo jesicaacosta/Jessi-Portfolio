@@ -187,16 +187,13 @@ h1,h2,p {
 
 .overlay:hover { /* Muestro la caja */
     opacity: 1;
+    z-index: 1000;
 }
 
-.overlay a { /* iconos de la superposición */
+.overlay a {
     color: #cb65fa; 
     font-size: 2em;
-    margin: auto 50%;
-    border: 4px solid forestgreen;
 }
-
-
 
 /* CONTACTO */
 .formulario {
