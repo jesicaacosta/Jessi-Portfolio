@@ -64,6 +64,7 @@ h1,h2,p {
     outline: 1px solid #23d5ab;
     padding: 10px;
     transition: outline 0.3s, color 0.2s; 
+    margin: 10px 5px;
 }
 
 .bg-black:hover {
@@ -101,7 +102,7 @@ h1,h2,p {
 }
 
 
-/**/
+/*Section Exper*/
 .seccion-exper {
     margin: 20px 30px;
     text-align: center;
@@ -148,6 +149,7 @@ h1,h2,p {
 
 }
 
+
 /* GITHUB */
 .proyectos-recientes {
     padding: 40px 0;
@@ -156,6 +158,7 @@ h1,h2,p {
 
 .proyectos-contenedor {
     margin-top: 20px;
+
 }
 
 .proyecto {
@@ -167,7 +170,7 @@ h1,h2,p {
     border-radius: 10px;
 }
 
-.overlay {
+.overlay { /* Creo un elemento para cubir la caja sin opacidad*/
     position: absolute;
     top: 0;
     bottom: 0;
@@ -179,29 +182,23 @@ h1,h2,p {
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.2);
 }
 
-.overlay:hover {
+.overlay:hover { /* Muestro la caja */
     opacity: 1;
 }
 
-.overlay a {
-    color: #ffffff; /* Color blanco para los iconos de la superposición */
+.overlay a { /* iconos de la superposición */
+    color: #cb65fa; 
     font-size: 2em;
-    margin: auto 50%x;
-}
-.fa-brands {
-    font-size: 2em;
-    margin: auto 20px;
-    color: #FFF;
-}
-
-.fa-brands:hover {
-    color: #fd3b00;
+    margin: auto 50%;
+    border: 4px solid forestgreen;
 }
 
 
-     /* CONTACTO */
+
+/* CONTACTO */
 .formulario {
     color: #fff; /* Color de texto blanco para la sección del formulario de contacto */
     padding: 40px 0;
@@ -262,4 +259,14 @@ footer {
 
 .social-icons a:hover {
     color: #ffffff; 
+}
+
+.fa-brands {
+    font-size: 2em;
+    margin: auto 20px;
+    color: #FFF;
+}
+
+.fa-brands:hover {
+    color: #fd3b00;
 }
