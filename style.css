@@ -31,8 +31,6 @@ h1,h2,p {
     font-size: 2em;
 }
 
-
-
 /*textoi de nombre animado */
 .animado {
     font-size: 3em;
@@ -144,7 +142,7 @@ h1,h2,p {
 }
 .seccion-sobremi p {
     font-size: 1.3em;
-    line-height: 3em;
+    line-height: 2.5em;
 
 }
 
@@ -207,23 +205,23 @@ h1,h2,p {
 }
 
 #contactForm {
-    max-width: 400px;
+    width: 70%;
     margin: 0 auto;
-    color: #23d5ab;
 }
 
 label {
     display: block;
-    margin-bottom: 10px;
-    color: #d33a89; /* Color rosa para las etiquetas */
+    margin: 15px auto;
+    color: #ffffff; 
+    width: 100%;
+    font-size: 1.4em;
 }
+
 
 input,
 textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ee7752; /* Color de borde rosa para los campos de entrada */
     border-radius: 5px;
 }
 
@@ -232,24 +230,19 @@ button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #ee7752; /* Color de fondo rosa para los botones */
-    color: #ffffff; /* Color de texto blanco para los botones */
+    background-color: #ee7752; 
+    color: #ffffff;
     font-size: 1em;
-    margin-right: 10px;
+
 }
 
-button a {
-    color: #23a6d5; /* Color blanco para los enlaces de los botones */
-    text-decoration: none;
+.contactForm_button {
+    margin: 30px auto;
 }
-
-button:hover {
-    background-color: #ffffff; /* Color de fondo blanco para los botones al pasar el mouse */
-    color: #d33a89; /* Color rosa para el texto de los botones al pasar el mouse */
+.contactForm_button:hover {
+    background-color: #fd3b00; 
+    color: #ffffff;
 }
-
-
-
 /* FOOTER */
 footer {
     background-color: #343a40; 
