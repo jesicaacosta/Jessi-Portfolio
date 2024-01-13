@@ -8,7 +8,9 @@ body {
     background-image: url(./images/fondo.jpg);
 }
 
-
+h1,h2,p {
+    color: #fff;
+}
 
 /* Contenedor del icono */
 #scroll-to-top {
