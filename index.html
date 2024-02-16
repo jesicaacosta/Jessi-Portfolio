@@ -17,7 +17,9 @@
      <link rel="icon" href="./images/lgo.ico" type="image/x-icon">
 
      <!-- FUENTES -->
-     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 
      <title>Jessi Portfolio</title>
@@ -95,41 +97,48 @@
           <section class="seccion-sobremi seccion-oscura" id="sobremi">
                <div>
                     <h2>Sobre mi</h2>
-                    <p class="seccion-p">¡Hola! Soy Jesica Acosta, estudiante de programación e ingeniería mecatrónica.
-                         Mi fascinación por la tecnología me llevó a explorar el desarrollo web de forma autodidacta.
-                         Actualmente, me encuentro concluyendo mi tecnicatura con el objetivo de trabajar en una empresa
-                         donde pueda aplicar y ampliar mis conocimientos. Mi enfoque es aprender constantemente, y estoy
-                         emocionada por contribuir con entusiasmo y dedicación en un entorno laboral dinámico.
-                         Desde mi infancia, mi interés por la tecnología me impulsó a investigar el funcionamiento de
-                         dispositivos electrónico. Actualmente, mi meta es participar en proyectos significativos. He
-                         adquirido experiencia en trabajo en equipo a través de proyectos académicos y aprecio la
-                         colaboración con profesionales técnicos. Mi compromiso con el aprendizaje continuo refleja mi
-                         dedicación a contribuir al futuro de la tecnología y la ingeniería.</p>
+                    <p class="seccion-p">
+                         <!-- Mi interés por la tecnología desde pequeña me impulsó a investigar el funcionamiento de
+                         dispositivos electrónicos, desarmando (no siempre correctamente! ) dispositivos para ver  interiormente como funcionaban.-->
+                         Actualmente, me encuentro concluyendo mi tecnicatura en Programación. La tecnologia y las
+                         tecnoloioas que usamos como programadores se actualizan constantemente, por lo que mi enfoque
+                         es aprender constantemente. En el ambito laboral estoy emocionada por contribuir con entusiasmo
+                         y dedicación en un entorno dinámico, junto a profesionales con experiencia en el sector.
+                    </p>
                </div>
           </section>
 
           <!-- Mi proyectos en Git Hub -->
           <section id="proyectos">
-               <h3 class="animado d-flex justify-content-center align-items-center">Mis proyectos en GitHub</h3> <br> <br>
+
                <div class="container d-flex flex-column justify-content-center align-items-center">
-                   <div class="row proyectos-div">
-                       <div class="col-md-6 mx-auto">
-                           <img src="images/laptop.png" alt="Proyecto de página de ropa" class="img-fluid">
-                           <p>Esta es una página que armé practicar HTML, CSS y Javascript. Tmbién en ella use los frameworks de Vue.js y Bootstrap. </p>
-                       </div>
-                   </div>
-                   <div class="row mt-3">
-                       <div class="col-md-12 ">
-                           <a href="https://github.com/jesicadaiana" target="_blank" rel="noopener noreferrer" class="d-block text-center">
-                               <i class="fab fa-github"></i> Código en Git Hub </a>
-                           <a href="https://jesicadaiana.github.io/pagTimeless/" target="_blank" class="d-block text-center">
-                               <i class="fab fa-chrome"></i> Enlace a la Página </a>
-                       </div>
-                   </div>
+                    <div class="row proyectos-div">
+                         <h2 class="text-center subtitulo"> Page Fan : Mi primer proyecto web </h2>
+                         <div class="col-md-6 mx-auto">
+                              <img src="images/laptop.png" alt="Proyecto de página de ropa" class="img-fluid">
+                         </div>
+                    </div>
+                    <div class="row mt-3">
+                         <div class="col-md-12 ">
+                              <a href="https://github.com/jesicadaiana" target="_blank" rel="noopener noreferrer"
+                                   class="d-block text-center">
+                                   <i class="fab fa-github"></i> Código en Git Hub </a>
+                              <a href="https://jesicadaiana.github.io/pagTimeless/" target="_blank"
+                                   class="d-block text-center">
+                                   <i class="fab fa-chrome"></i> Enlace a la Página </a>
+                         </div>
+                    </div>
                </div>
-           </section>
-           
-           
+          </section>
+
+
+          <section class="frase text-center ">
+               <p>
+                    "Mi compromiso con el aprendizaje continuo refleja mi dedicación a contribuir al futuro de la
+                    tecnología"
+               </p>
+          </section>
+
 
           <!-- Formación -->
           <hr id="estudios">
@@ -138,39 +147,37 @@
                <div class="row d-flex flex-row justify-content-center ">
 
                     <div class="columna-exp col mb-3 mr-3">
-                         <h1>🤖 Estudios </h1>
+                         <h2 class="subtitulo">🤖 Estudios </h2>
                          <span class="badge bg-black mb-3">🔋 TECN. EN PROGRAMACIÓN</span>
-                         <p>Univ. Tecnológica Nacional (UTN)</p> 
+                         <p>Univ. Tecnológica Nacional (UTN)</p>
                          <span class="badge bg-black mb-3"> 🔋 INGENIERIA EN MECATRÓNICA</span>
-                         <p>Univ. Nacional de Lomas de Zamora</p> 
+                         <p>Univ. Nacional de Lomas de Zamora</p>
                          <p>14 de 20 materias promocionadas. Primer año</p>
                     </div>
 
                     <!-- Lenguajes de Programación -->
                     <div class="columna-exp row ">
-                         <h1>🤖 Lenguajes de Programación</h1> <br>
+                         <h2 class="subtitulo">🤖 Lenguajes de Programación y Frameworks </h2> <br>
                          <div class="exp-badge-contenedor">
-                              <span class="badge bg-black">HTML Y CSS</span> 
-                              <span class="badge bg-black">Python</span> 
-                              <span class="badge bg-black">Javascript</span> 
-                         </div>
-                         <h1>🤖 Frameworks</h1> 
-                         <div>
-                              <span class="badge bg-black">Vue</span> 
-                              <span class="badge bg-black">Bootstrap</span> 
+                              <span class="badge bg-black">HTML Y CSS</span>
+                              <span class="badge bg-black">Python</span>
+                              <span class="badge bg-black">Javascript</span>
+                              <span class="badge bg-black">Vue</span>
+                              <span class="badge bg-black">Bootstrap</span>
                          </div>
                     </div>
 
                </div>
           </section>
 
+
           <hr id="experienciaLab">
           <!-- Experiencia Laboral -->
           <div class="columna-exp col d-flex flex-column justify-content-center align-items-center mr-4">
-               <h1>🤖 Experiencia laboral </h1> <br>
-               <span class="badge bg-black">MOON AGENDAS</span> 
+               <h2 class="subtitulo">🤖 Experiencia laboral </h2> <br>
+               <span class="badge bg-black">MOON AGENDAS</span>
                <p>Diseño para maquetación vectorial. Envíos y coordinación de pedidos</p>
-               <span class="badge bg-black">STAFF TECHNOLOGY</span> 
+               <span class="badge bg-black">STAFF TECHNOLOGY</span>
                <p>Atención a clientes por reclamos o instalaciones del servicio. </p>
                <p>Llamadas salientes para ofrecer el servicio. </p>
                <span class="badge bg-black">LÓPEZ DIGITAL </span>
@@ -178,7 +185,7 @@
           </div>
 
           <section class="formulario" id="contacto">
-               <h2 class="animado">Contactame</h2> <br>
+               <h2 class="subtitulo">Contactame</h2> <br>
                <div class="row d-flex flex-row justify-content-center align-items-center">
 
                     <div class="col">
@@ -197,7 +204,7 @@
                               </button>
                               <button type="button" onclick="resetearFormulario()" class="contactForm_button"
                                    id="resetBtn">Reset</button>
-                              </form>
+                         </form>
                     </div>
 
                </div>
@@ -207,15 +214,17 @@
      </main>
 
      <footer>
-          <div  class="container text-center ">
+          <div class="container text-center ">
                <div>
                     <img src="./images/chica.png" width="150px" alt=""> <br>
                     <p>&copy; 2023 Jessi Dev - Desarrolladora Full Stack</p> <br>
                </div>
 
                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/jesicadaiana/" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/jesicadaiana" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jesicadaiana/" target="_blank" rel="noopener noreferrer"><i
+                              class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jesicadaiana" target="_blank" rel="noopener noreferrer"><i
+                              class="fa-brands fa-github"></i></a>
                </div>
           </div>
      </footer>

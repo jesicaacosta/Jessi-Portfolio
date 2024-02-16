@@ -1,7 +1,6 @@
 /* Estilos generales */
 * {
     box-sizing: border-box;
-    font-size: 18px;
     margin: 0;
 }
 body {
@@ -12,26 +11,39 @@ main {
     background: rgba(0, 0, 0, 0.5);
     padding: 0 30px;
 }
-h1,h2,p {
+p {
+    font-size: 17px;
+}
+h1,h2 {
+    font-size: 1.1em ;
     color: #fff;
 }
-p {
-    font-size: 1.1em;
+.subtitulo {
+    color: #23d5ab;
+    margin: 20px;
+    font-family: "Inter", sans-serif;
 }
 a:link, a:visited, a:active ,i {
     text-decoration:none;
     color: #23d5ab;
-    font-size: 1.3em;
     line-height: 1.5em;
+    margin: 5px;
 }
+
+a :hover {
+    color: #ee7752;
+    font-size: 1.4em;
+}
+
+
 /* Contenedor del icono */
 #scroll-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #e73c7e;
-    color: #ffff;
-    padding: 10px;
+    color: #ffffff;
+    padding: auto;
     border-radius: 5px;
     cursor: pointer;
     display: none;
@@ -40,13 +52,13 @@ a:link, a:visited, a:active ,i {
 }
 
 #scroll-to-top i {
+    padding: 5px;
     font-size: 2em;
 }
 
 /*textoi de nombre animado */
 .animado {
     font-size: 3em;
-    font-family: 'Public Sans', sans-serif;
     animation: fluido 10s ease-in-out infinite;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 300%;
@@ -63,7 +75,8 @@ a:link, a:visited, a:active ,i {
 
 .nombre h2 {
     font-size: 2em;
-    font-family: 'Public Sans', sans-serif;
+    font-family: "Kode Mono", monospace;
+    color: #ee7752;
 }
 
 /* Globos informatios */
@@ -72,7 +85,7 @@ a:link, a:visited, a:active ,i {
     outline: 1px solid #23d5ab;
     padding: 10px;
     transition: outline 0.3s, color 0.2s; 
-    margin: 10px 5px;
+    margin: 5px auto;
 }
 
 .bg-black:hover {
@@ -122,19 +135,6 @@ a:link, a:visited, a:active ,i {
     padding: 30px;
 }
 
-.columna-exp h1 {
-    color: #fff;
-}
-.nombre {
-    padding: 40px 0;
-}
-
-.nombre-principal {
-    text-align: center;
-}
-.nombre-principal h2 {
-    color: #fff;
-}
 
 .nombre-principal-img {
     border-radius: 50%;
@@ -152,8 +152,9 @@ a:link, a:visited, a:active ,i {
     color: #fff;
 }
 .seccion-sobremi p {
-    font-size: 1.3em;
-    line-height: 2.5em;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-style: italic;
 
 }
 
@@ -165,9 +166,12 @@ a:link, a:visited, a:active ,i {
     border-left: 2px solid #fff;
 }
 
-
-
-
+/*FRASE*/
+.frase {
+    margin: 50px;
+    font-family: "Mulish", sans-serif;
+    color: #d33a89;
+}
 
 
 /* CONTACTO */
@@ -216,6 +220,8 @@ button {
     background-color: #fd3b00; 
     color: #ffffff;
 }
+
+
 /* FOOTER */
 footer {
     background-color: #343a40; 
