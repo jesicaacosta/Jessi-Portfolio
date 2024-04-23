@@ -172,9 +172,12 @@ a :hover {
 /* GITHUB */
 
 .proyectos-div {
-    border-right: 2px solid #fff;
-    border-left: 2px solid #fff;
+    margin: 30px auto;
 }
+.proyectos-div links {
+    font-size: 1.5em;
+}
+
 
 /*FRASE*/
 .frase {
