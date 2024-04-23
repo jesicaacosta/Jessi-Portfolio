@@ -84,15 +84,19 @@ a :hover {
 
 /* Globos informatios */
 .badge.bg-black {
+    display: block;
+    width: 70%;
     font-size: 1.2em;
     outline: 1px solid #23d5ab;
-    padding: 10px;
+    padding: 20px;
     transition: outline 0.3s, color 0.2s; 
-    margin: 5px auto;
+    margin: 10px auto;
 }
 
 .bg-black:hover {
-    outline: 3px solid #23d5ab; /* Linea sin ocupar eespacio para que no se mueva el contenido */
+    outline: 4px solid #23d5ab; /* Linea sin ocupar eespacio para que no se mueva el contenido */
+    background-color: #000000;
+    color: #ee7752;
 }
 
 .container {
