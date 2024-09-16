@@ -1,264 +1,361 @@
 <!DOCTYPE html>
 <html lang="es">
+  <!-- Head -->
 
-<!-- Head -->
+  <head>
+    <!--Metadatos-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jesica Acosta" />
+    <meta name="description" content="Portafolio Jesica " />
+    <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap" />
 
-<head>
-     <!--Metadatos-->
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="author" content="Jesica Acosta">
-     <meta name="description" content="Portafolio Jesica ">
-     <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap">
+    <meta name="theme-color" content="#00000" />
 
-     <meta name="theme-color" content="#00000" />
+    <link rel="icon" href="./images/lgo.ico" type="image/x-icon" />
 
-     <link rel="icon" href="./images/lgo.ico" type="image/x-icon">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
 
-     <!-- FUENTES -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Jessi Portfolio</title>
 
-     <title>Jessi Portfolio</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
 
-     <!--CSS-->
-     <link rel="stylesheet" href="style.css">
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
 
-     <!--Bootstrap-->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap"
+      rel="stylesheet"
+    />
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap" rel="stylesheet">
+    <!--iconos awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
 
-     <!--iconos awesome-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <body>
+    <!-- Barra de navegacion -->
 
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav-Toggler"
+          aria-controls="nav-Toggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-</head>
+        <div class="collapse navbar-collapse" id="nav-Toggler">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobremi"
+                >Sobre mi</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experienciaLab"
+                >Experiencia Laboral
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#estudios">Estudios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<body>
+    <main>
+      <!-- Contenedor del icono -->
+      <div id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+      </div>
 
-     <!-- Barra de navegacion -->
+      <!--Seccion nombre -->
+      <section class="nombre align-items-stretch">
+        <div
+          class="nombre-principal d-flex flex-column justify-content-center align-items-center"
+        >
+          <img
+            class="nombre-principal-img"
+            src="images/CV.png"
+            alt="Foto de desarrollo web"
+            width="400px"
+          />
+          <h1 class="animado">Hola, soy Jesica Acosta</h1>
+          <h2>🤖 Programadora 🤖</h2>
+        </div>
+      </section>
 
-     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-          <div class="container-fluid">
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-Toggler"
-                    aria-controls="nav-Toggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-               </button>
+      Seccion Sobre Mi
+      <section class="seccion-sobremi seccion-oscura" id="sobremi">
+        <div>
+          <h2>Sobre mi</h2>
+          <p class="seccion-p">
+            Mi interés por la tecnología desde pequeña me impulsó a investigar
+            el funcionamiento de dispositivos electrónicos, desarmando ( y
+            rompiendo 😂 ) dispositivos para ver interiormente como funcionaban.
+            Actualmente, me encuentro cursando mi primer año en Ingenieria
+            Mecatrónica, al tiempo que dedico gran parte a aprender
+            programación, habiendo casi finalizado la tecnicatura en
+            Programación en la Universidad Nacional Tecnológica. La tecnologias
+            que usamos como programadores se actualizan constantemente, por lo
+            que mi enfoque es aprender constantemente. En el ámbito laboral
+            estoy emocionada por contribuir con entusiasmo y dedicación en un
+            entorno dinámico, junto a profesionales con experiencia en el
+            sector.
+          </p>
+        </div>
+      </section>
 
-               <div class="collapse navbar-collapse " id="nav-Toggler">
-                    <ul class="navbar-nav d-flex justify-content-center  align-items-center ">
-                         <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#sobremi">Sobre mi</a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#experienciaLab">Experiencia Laboral </a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#estudios">Estudios </a>
-                         </li>
-                         <li class="nav-item">
-                              <a class="nav-link" href="#contacto">Contacto </a>
-                         </li>
-                    </ul>
-               </div>
-
+      <!-- Mi proyectos en Git Hub -->
+      <section id="proyectos">
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center"
+        >
+          <!-- Lana del rey -->
+          <div class="row proyectos-div">
+            <h2 class="text-center subtitulo">
+              Page Fan : Mi primer proyecto web
+            </h2>
+            <div class="col-md-6 mx-auto">
+              <img
+                src="images/laptop.png"
+                alt="Proyecto de pagina fan de Lana del Rey"
+                class="img-fluid"
+              />
+            </div>
           </div>
-     </nav>
-
-
-     <main>
-
-
-          <!-- Contenedor del icono -->
-          <div id="scroll-to-top" onclick="scrollToTop()">
-               <i class="fas fa-chevron-up"></i>
-          </div>
-
-
-          <!--Seccion nombre -->
-          <section class="nombre align-items-stretch">
-               <div class="nombre-principal d-flex flex-column justify-content-center align-items-center">
-                    <img class="nombre-principal-img" src="images/CV.png" alt="Foto de desarrollo web" width="400px">
-                    <h1 class="animado"> Hola, soy Jesica Acosta</h1>
-                    <h2> 🤖 Full Stack Developer 🤖 </h2>
-               </div>
-          </section>
-
-
-          <!-- Seccion Sobre Mi -->
-          <section class="seccion-sobremi seccion-oscura" id="sobremi">
-               <div>
-                    <h2>Sobre mi</h2>
-                    <p class="seccion-p">
-                          Mi interés por la tecnología desde pequeña me impulsó a investigar el funcionamiento de
-                         dispositivos electrónicos, desarmando ( y rompiendo 😂 ) dispositivos para ver  interiormente como funcionaban.
-                         Actualmente, me encuentro cursando mi primer año en Ingenieria Mecatrónica, al tiempo que dedico gran parte a aprender programación, habiendo casi finalizado la tecnicatura en Programación en la Universidad Nacional Tecnológica.
-                         La tecnologias que usamos como programadores se actualizan constantemente, por lo que mi enfoque
-                         es aprender constantemente. En el ámbito laboral estoy emocionada por contribuir con entusiasmo
-                         y dedicación en un entorno dinámico, junto a profesionales con experiencia en el sector.
-                    </p>
-               </div>
-          </section>
-
-          <!-- Mi proyectos en Git Hub -->
-          <section id="proyectos">
-
-               <div class="container d-flex flex-column justify-content-center align-items-center">
-                    <!-- Lana del rey -->
-                    <div class="row proyectos-div">
-                         <h2 class="text-center subtitulo"> Page Fan : Mi primer proyecto web </h2>
-                         <div class="col-md-6 mx-auto">
-                              <img src="images/laptop.png" alt="Proyecto de pagina fan de Lana del Rey" class="img-fluid">
-                         </div>
-                    </div>
-                    <div class="row mt-3">
-                         <div class="col-md-12 ">
-                              <a href="https://jesicadaiana.github.io/LanadelRey/" target="_blank" rel="noopener noreferrer"
-                                   class="d-block text-center links">
-                                   <i class="fab fa-github"></i> Código en Git Hub </a>
-                              <a href="https://github.com/jesicadaiana/LanadelRey" target="_blank"
-                                   class="d-block text-center links ">
-                                   <i class="fab fa-chrome"></i> Enlace a la Página </a>
-                         </div>
-                    </div>
-
-          
-                    <!--JS Devs -->
-
-                    <div class="row proyectos-div">
-                         <h2 class="text-center subtitulo"> Recursos para Javascript   </h2>
-                         <div class="col-md-6 mx-auto">
-                              <img src="images/laptop - copia.jpg" alt="Proyecto de pagina de recursos para Javascript" class="img-fluid">
-                         </div>
-                    </div>
-                    <div class="row mt-3">
-                         <div class="col-md-12 ">
-                              <a href="https://jesicadaiana.github.io/colores" target="_blank" rel="noopener noreferrer"
-                                   class="d-block text-center links">
-                                   <i class="fab fa-github"></i> Código en Git Hub </a>
-                              <a href="https://github.com/jesicadaiana/colores" target="_blank"
-                                   class="d-block text-center links">
-                                   <i class="fab fa-chrome"></i> Enlace a la Página </a>
-                         </div>
-                    </div>
-
-
-               </div>
-
-          </section>
-
-
-          <section class="frase text-center ">
-               <p>
-                    "Mi compromiso con el aprendizaje continuo refleja mi dedicación a contribuir al futuro de la
-                    tecnología"
-               </p>
-          </section>
-
-
-          <!-- Formación -->
-          <hr id="estudios">
-
-          <section class="container-fluid seccion-exper ">
-               <div class="row d-flex flex-row justify-content-center ">
-
-                    <div class="columna-exp col mb-3 mr-3">
-                         <h2 class="subtitulo">🤖 Estudios </h2>
-                         <span class="badge bg-black mb-3"> 🔋 INGENIERIA EN MECATRÓNICA</span>
-                         <p>Univ. Nacional de Lomas de Zamora</p>
-                         <span class="badge bg-black mb-3">🔋 TECN. EN PROGRAMACIÓN</span>
-                         <p>Univ. Tecnológica Nacional (UTN)</p>
-
-                    </div>
-
-                    <!-- Lenguajes de Programación -->
-                    <div class="columna-exp row ">
-                         <h2 class="subtitulo">🤖 Lenguajes de Programación y Frameworks </h2> <br>
-                         <div class="exp-badge-contenedor">
-                              <span class="badge bg-black">HTML Y CSS</span>
-                              <span class="badge bg-black">Python</span>
-                              <span class="badge bg-black">Javascript</span>
-                              <span class="badge bg-black">Vue</span>
-                              <span class="badge bg-black">Bootstrap</span>
-                         </div>
-                    </div>
-
-               </div>
-          </section>
-
-
-          <hr id="experienciaLab">
-          <!-- Experiencia Laboral -->
-          <div class="columna-exp col d-flex flex-column justify-content-center align-items-center mr-3">
-               <h2 class="subtitulo">🤖 Experiencia laboral </h2> <br>
-               <span class="badge bg-black">MOON AGENDAS</span>
-               <p>Diseño para maquetación vectorial. Envíos y coordinación de pedidos</p>
-               <span class="badge bg-black">STAFF TECHNOLOGY</span>
-               <p>Atención a clientes por reclamos o instalaciones del servicio. <br> Llamadas salientes para ofrecer el servicio. </p>
-               <span class="badge bg-black">LÓPEZ DIGITAL </span>
-               <p>Atención en local comercial.</p>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <a
+                href="https://jesicaacosta.github.io/LanadelRey/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="d-block text-center links"
+              >
+                <i class="fab fa-github"></i> Código en Git Hub
+              </a>
+              <a
+                href="https://jesicaacosta.github.io/FanPage-LanadelRey/"
+                target="_blank"
+                class="d-block text-center links"
+              >
+                <i class="fab fa-chrome"></i> Enlace a la Página
+              </a>
+            </div>
           </div>
 
-          <section class="formulario" id="contacto">
-               <h2 class="subtitulo">Contactame</h2> <br>
-               <div class="row d-flex flex-row justify-content-center align-items-center">
+          <!--JS Devs -->
 
-                    <div class="col">
-                         <form id="contactForm">
-                              <label for="name">Tu nombre: </label>
-                              <input type="text" id="name" name="name" required>
-
-                              <label for="email">Un Correo Electrónico:</label>
-                              <input type="email" id="email" name="email" required>
-
-                              <label for="message">Dejame un mensaje:</label>
-                              <textarea id="message" name="message" rows="4" required></textarea>
-
-                              <button type="button" onclick="enviarMensaje()" class="contactForm_button"
-                                   id="enviarBtn">Enviar
-                              </button>
-                              <button type="button" onclick="resetearFormulario()" class="contactForm_button"
-                                   id="resetBtn">Reset</button>
-                         </form>
-                    </div>
-
-               </div>
-          </section>
-
-
-     </main>
-
-     <footer>
-          <div class="container text-center ">
-               <div>
-                    <img src="./images/chica.png" width="150px" alt=""> <br>
-                    <p>&copy; 2023 Jessi Dev - Desarrolladora Full Stack</p> <br>
-               </div>
-
-               <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/jesicadaiana/" target="_blank" rel="noopener noreferrer"><i
-                              class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/jesicadaiana" target="_blank" rel="noopener noreferrer"><i
-                              class="fa-brands fa-github"></i></a>
-               </div>
+          <div class="row proyectos-div">
+            <h2 class="text-center subtitulo">Recursos para Javascript</h2>
+            <div class="col-md-6 mx-auto">
+              <img
+                src="images/laptop - copia.jpg"
+                alt="Proyecto de pagina de recursos para Javascript"
+                class="img-fluid"
+              />
+            </div>
           </div>
-     </footer>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <a
+                href="https://jesicaacosta.github.io/colores"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="d-block text-center links"
+              >
+                <i class="fab fa-github"></i> Código en Git Hub
+              </a>
+              <a
+                href="https://jesicaacosta.github.io/Pagina-Javascript/"
+                target="_blank"
+                class="d-block text-center links"
+              >
+                <i class="fab fa-chrome"></i> Enlace a la Página
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="frase text-center">
+        <p>
+          "Mi compromiso con el aprendizaje continuo refleja mi dedicación a
+          contribuir al futuro de la tecnología"
+        </p>
+      </section>
 
-     <!-- Javascript-->
-     <script src="script.js"></script>
-     <!--Bootstrap para JS-->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"></script>
+      <!-- Formación -->
+      <hr id="estudios" />
 
+      <section class="container-fluid seccion-exper">
+        <div class="row d-flex flex-row justify-content-center">
+          <div class="columna-exp col mb-3 mr-3">
+            <h2 class="subtitulo">🤖 Estudios</h2>
+            <span class="badge bg-black mb-3">
+              🔋 INGENIERIA EN MECATRÓNICA</span
+            >
+            <p>Univ. Nacional de Lomas de Zamora</p>
+            <span class="badge bg-black mb-3">🔋 TECN. EN PROGRAMACIÓN</span>
+            <p>Univ. Tecnológica Nacional (UTN)</p>
+          </div>
 
-</body>
+          <!-- Lenguajes de Programación -->
+          <div class="columna-exp row">
+            <h2 class="subtitulo">🤖 Lenguajes de Programación</h2>
+            <br />
+            <div class="exp-badge-contenedor">
+              <span class="badge bg-black">HTML Y CSS</span>
+              <span class="badge bg-black">Python</span>
+              <span class="badge bg-black">Javascript</span>
+              <span class="badge bg-black">Bootstrap</span>
+            </div>
+            <h2 class="subtitulo">🤖 Incursionando en:</h2>
+            <br />
+            <div class="exp-badge-contenedor">
+              <span class="badge bg-black">MySQL</span>
+              <span class="badge bg-black">Jupyter</span>
+            </div>
+            <h2 class="subtitulo">🤖cursando:</h2>
+            <br />
+            <div class="exp-badge-contenedor">
+              <span class="badge bg-black">Diseño UX/UI</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <hr id="experienciaLab" />
+      <!-- Experiencia Laboral -->
+      <div
+        class="columna-exp col d-flex flex-column justify-content-center align-items-center mr-3"
+      >
+        <h2 class="subtitulo">🤖 Experiencia laboral</h2>
+        <br />
+        <span class="badge bg-black">MOON AGENDAS</span>
+        <p>
+          Diseño para maquetación vectorial. Envíos y coordinación de pedidos
+        </p>
+        <span class="badge bg-black">STAFF TECHNOLOGY</span>
+        <p>
+          Atención a clientes por reclamos o instalaciones del servicio. <br />
+          Llamadas salientes para ofrecer el servicio.
+        </p>
+        <span class="badge bg-black">LÓPEZ DIGITAL </span>
+        <p>Atención en local comercial.</p>
+      </div>
+
+      <section class="formulario" id="contacto">
+        <h2 class="subtitulo">Contactame</h2>
+        <br />
+        <div
+          class="row d-flex flex-row justify-content-center align-items-center"
+        >
+          <div class="col">
+            <form id="contactForm">
+              <label for="name">Tu nombre: </label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Un Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Dejame un mensaje:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+
+              <button
+                type="button"
+                onclick="enviarMensaje()"
+                class="contactForm_button"
+                id="enviarBtn"
+              >
+                Enviar
+              </button>
+              <button
+                type="button"
+                onclick="resetearFormulario()"
+                class="contactForm_button"
+                id="resetBtn"
+              >
+                Reset
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container text-center">
+        <div>
+          <img src="./images/chica.png" width="150px" alt="" /> <br />
+          <p>&copy; 2023 Jessi Dev - Desarrolladora Full Stack</p>
+          <br />
+        </div>
+
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/jesicadaiana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/jesicadaiana"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript-->
+    <script src="script.js"></script>
+    <!--Bootstrap para JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
