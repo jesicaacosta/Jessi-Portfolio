@@ -6,7 +6,7 @@
 
 body {
     background-image: url(./images/fondo.jpg);
-
+    overflow-x: hidden;
 }
 
 main {
@@ -14,13 +14,18 @@ main {
     padding: 0 30px;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 p {
-    font-size: 22px;
+    font-size: 18px;
 }
 
 h1,
 h2 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #fff;
 }
 
@@ -105,20 +110,18 @@ a :hover {
 /* Globos informatios */
 .badge.bg-black {
     display: block;
-    width: 70%;
     font-size: 1.2em;
     outline: 1px solid #23d5ab;
-    padding: 20px;
+    padding: 5px;
     transition: outline 0.3s, color 0.2s;
-    margin: 10px auto;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+.exp-badge-contenedor p {
+    font-size: 1em;
 }
 
-.bg-black:hover {
-    outline: 4px solid #23d5ab;
-    /* Linea sin ocupar eespacio para que no se mueva el contenido */
-    background-color: #000000;
-    color: #ee7752;
-}
+
 
 .container {
     max-width: 1200px;
@@ -175,8 +178,7 @@ a :hover {
 
 .seccion-sobremi {
     color: #ffffff;
-    padding: 40px;
-    text-align: center;
+    padding: 10px;
 }
 
 .seccion-sobremi:hover {
@@ -185,7 +187,7 @@ a :hover {
 }
 
 .seccion-sobremi p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 2em;
     font-style: italic;
 }
@@ -203,19 +205,22 @@ a :hover {
 
 /*FRASE*/
 .frase {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 50px;
     font-family: "Mulish", sans-serif;
-    color: #d33a89;
+    color: #ffffff;
 }
 
 
 /* CONTACTO */
+.contactForm {
+    width: 100%;
+}
 .formulario {
     color: #fff;
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 #contactForm {
@@ -223,13 +228,14 @@ a :hover {
     margin: 0 auto;
 }
 
-label {
+label { /*Textos del  formulario */
     display: block;
     margin: 15px auto;
     color: #ffffff;
     width: 100%;
     font-size: 1.4em;
 }
+
 
 
 input,
