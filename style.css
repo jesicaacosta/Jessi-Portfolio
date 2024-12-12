@@ -2,293 +2,194 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
 body {
-    background-image: url(./images/fondo.jpg);
+    background-color: #1e1e1e;
+    font-family: 'Fira Code', monospace;
+    color: #d4d4d4;
+    line-height: 1.6;
     overflow-x: hidden;
 }
 
-main {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 0 30px;
+section {
+    border-top: 2px solid #fa58bc;
+    margin: 50px auto;
 }
-
-img {
-    max-width: 100%;
-    height: auto;
+.sub_h5{
+    color: lightcyan;
+    display: block;
+    font-size: 1.1em; 
+}
+.titulos {
+    color: lightpink;
+    display: block;
+    font-size: 1.7em;
+}
+.subtitulos {
+    color: lightpink;
+    display: block;
+    font-size: 1.7em;
+}
+li{
+    color: #fff;
+    list-style-type: none;
+}
+i{
+    color: lightskyblue;
+    font-size: 1.2em;
+    margin: 0 3px;
+}
+main {
+    padding: 20px;
+    background: #1e1e1ee6;
+    border-radius: 10px;
 }
 
 p {
-    font-size: 18px;
-}
-
-h1,
-h2 {
-    font-size: 1.1em;
-    color: #fff;
-}
-
-.subtitulo {
-    color: #23d5ab;
-    margin: 50px auto;
-    font-family: "Inter", sans-serif;
-}
-
-a:link,
-a:visited,
-a:active,
-i {
-    text-decoration: none;
-    color: #23d5ab;
-    line-height: 1.5em;
-    margin: 5px;
-}
-
-a :hover {
-    color: #ee7752;
-    font-size: 1.4em;
-}
-
-.nombre {
-    margin: 100px auto;
-}
-
-/* Contenedor del icono */
-#scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #e73c7e;
+    font-size: 16px;
+    margin-bottom: 15px;
     color: #ffffff;
-    padding: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    display: none;
-    width: 3em;
-    height: 3em;
 }
 
-#scroll-to-top i {
-    padding: 5px;
-    font-size: 2em;
+a {
+    text-decoration: none;
+    color: #fa58bc;
+    transition: color 0.3s;
 }
 
-/*textoi de nombre animado */
-.animado {
-    font-size: 3em;
-    animation: fluido 10s ease-in-out infinite;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+a:hover {
+    color: #dcdcaa;
 }
 
-
-/* Configuro como va sel KF fluido */
-@keyframes fluido {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
-}
-
-.nombre h2 {
-    font-size: 2em;
-    font-family: "Kode Mono", monospace;
-    color: #ee7752;
-}
-
-/* Globos informatios */
-.badge.bg-black {
-    display: block;
-    font-size: 1.2em;
-    outline: 1px solid #23d5ab;
-    padding: 5px;
-    transition: outline 0.3s, color 0.2s;
-    padding: 5px 10px;
-    margin: 10px 0;
-}
-.exp-badge-contenedor p {
-    font-size: 1em;
-}
-
-
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-
-/* Barra de navegacion */
+/* Navbar */
 .navbar {
-    height: 10vh;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #252526;
     position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-nav {
     display: flex;
-    justify-content: space-around;
-    /* Distribuir enlaces horizontalmente */
-    align-items: center;
-    height: 100%;
-    background-color: #212529;
-    padding: 5px 10px;
-    position: relative;
-    top: 15px;
+    gap: 15px;
+}
+.lead{
+    color: lightgoldenrodyellow;
 }
 
-.nav-link {
-    text-decoration: none;
+
+/* Botón de desplazamiento */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007acc;
     color: #ffffff;
-    transition: background-color 0.3s ease;
-}
-
-
-/*Section Exper*/
-.seccion-exper {
-    margin: 20px 30px;
-    text-align: center;
-
-}
-
-.columna-exp {
-    padding: 40px auto;
-    margin: 20px;
-    color: #ffffff;
-    padding: 30px;
-
-}
-
-
-.nombre-principal-img {
+    border: none;
     border-radius: 50%;
-    margin-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
 }
 
-.seccion-sobremi {
-    color: #ffffff;
-    padding: 10px;
+#scroll-to-top:hover {
+    background-color: #569cd6;
 }
 
-.seccion-sobremi:hover {
-    background-color: rgb(211, 58, 137, 0.7);
-    color: #fff;
+/* Animación del texto */
+.animado {
+    font-size: 2.5em;
+    font-weight: bold;
+    background: linear-gradient(90deg, #569cd6, #dcdcaa, #c586c0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text-flow 5s infinite;
 }
 
-.seccion-sobremi p {
-    font-size: 1em;
-    line-height: 2em;
-    font-style: italic;
+@keyframes text-flow {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
 }
 
-
-/* GITHUB */
-.proyectos-div {
-    margin: 20px auto;
+/* Formularios */
+form {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
 }
 
-.links {
-    font-size: 1.5em;
-}
-
-
-/*FRASE*/
-.frase {
-    font-size: 1.3em;
-    margin: 50px;
-    font-family: "Mulish", sans-serif;
-    color: #ffffff;
-}
-
-
-/* CONTACTO */
-.contactForm {
-    width: 100%;
-}
-.formulario {
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
-}
-
-#contactForm {
-    width: 70%;
-    margin: 0 auto;
-}
-
-label { /*Textos del  formulario */
+label {
     display: block;
-    margin: 15px auto;
-    color: #ffffff;
-    width: 100%;
-    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #dcdcaa;
 }
 
-
-
-input,
-textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e;
+    border: 1px solid #3c3c3c;
+    color: #d4d4d4;
     border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #569cd6;
 }
 
 button {
-    cursor: pointer;
     padding: 10px 20px;
+    background-color: #007acc;
     border: none;
     border-radius: 5px;
-    background-color: #ee7752;
     color: #ffffff;
-    font-size: 1em;
-
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.contactForm_button {
-    margin: 30px auto;
+button:hover {
+    background-color: #569cd6;
 }
-
-.contactForm_button:hover {
-    background-color: #fd3b00;
-    color: #ffffff;
+.habilidades{
+    border: 2px solid red;
 }
-
-
-/* FOOTER */
+/* Footer */
 footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 20px 0;
+    background-color: #252526;
+    color: #d4d4d4;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .social-icons a {
-    color: #d33a89;
-    font-size: 1.5em;
+    color: #569cd6;
     margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
 }
 
 .social-icons a:hover {
-    color: #ffffff;
-}
-
-.fa-brands {
-    font-size: 2em;
-    margin: auto 20px;
-    color: #FFF;
-}
-
-.fa-brands:hover {
-    color: #fd3b00;
+    color: #dcdcaa;
 }

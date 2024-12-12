@@ -1,353 +1,183 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- Head -->
 
-  <head>
-    <!--Metadatos-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jesica Acosta" />
-    <meta name="description" content="Portafolio Jesica " />
-    <meta name="keywords" content="HTML, CSS, Javascript, Bootstrap" />
+<head>
+  <!-- Metadatos -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jesica Acosta">
+  <meta name="description" content="Portafolio de Jesica Acosta - Programadora.">
+  <meta name="keywords" content="HTML, CSS, Python, MySQL, Programadora">
 
-    <meta name="theme-color" content="#00000" />
+  <title>Jesica Acosta - Programadora</title>
 
-    <link rel="icon" href="./images/lgo.ico" type="image/x-icon" />
+  <!-- Icono -->
+  <link rel="icon" href="./images/logo.ico" type="image/x-icon">
 
-    <!-- FUENTES -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anta&family=Inter:wght@100..900&family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <title>Jessi Portfolio</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
+  <!-- Iconos Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--iconos awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-  </head>
-
-  <body>
-    <!-- Barra de navegacion -->
-
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#nav-Toggler"
-          aria-controls="nav-Toggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="nav-Toggler">
-          <ul
-            class="navbar-nav d-flex justify-content-center align-items-center"
-          >
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#sobremi"
-                >Sobre mi</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experienciaLab"
-                >Experiencia Laboral
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#estudios">Estudios </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacto">Contacto </a>
-            </li>
-          </ul>
-        </div>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Jesica Acosta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <main>
-      <!-- Contenedor del icono -->
-      <div id="scroll-to-top" onclick="scrollToTop()">
-        <i class="fas fa-chevron-up"></i>
+  <main>
+    <!-- Sección principal -->
+    <section class="text-center py-5">
+      <div class="container">
+        <img src="images/CV.png" alt="Jesica Acosta" class="rounded-circle mb-4" width="150">
+        <h1a class="titulos">Jesica Acosta</h1>
+        <p class="lead">Programadora especializada en Python, MySQL y análisis de datos</p>
       </div>
+    </section>
 
-      <!--Seccion nombre -->
-      <section class="nombre align-items-stretch">
-        <div
-          class="nombre-principal d-flex flex-column justify-content-center align-items-center"
-        >
-          <img
-            class="nombre-principal-img"
-            src="images/CV.png"
-            alt="Foto de desarrollo web"
-            width="200px"
-          />
-          <h1 class="animado">Hola, soy Jesica Acosta</h1>
-          <h2>🤖 Programadora 🤖</h2>
-        </div>
-      </section>
-
-      <section class="seccion-sobremi seccion-oscura" id="sobremi">
-        <div>
-          <h2>Sobre mi</h2>
-          <p class="seccion-p">
-            Mi interés por la tecnología desde pequeña me impulsó a investigar
-            el funcionamiento de dispositivos electrónicos, desarmando ( y
-            rompiendo 😂 ) dispositivos para ver interiormente como funcionaban.
-            Actualmente, me encuentro cursando mi primer año en Ingenieria
-            Mecatrónica, al tiempo que dedico gran parte a aprender
-            programación, habiendo casi finalizado la tecnicatura en
-            Programación en la Universidad Nacional Tecnológica. La tecnologias
-            que usamos como programadores se actualizan constantemente, por lo
-            que mi enfoque es aprender constantemente. En el ámbito laboral
-            estoy emocionada por contribuir con entusiasmo y dedicación en un
-            entorno dinámico, junto a profesionales con experiencia en el
-            sector.
+<!-- Sobre mí -->
+<section id="sobremi" class="py-3">
+  <h2 class="subtitulos">Sobre mí</h2>
+  <div class="container-fluid sobre-mi d-flex align-items-center">
+      <div class="txt-sobremi">
+          <p>
+              Programadora recibida en Universidad Tecnológica Nacional con experiencia en desarrollo de software y análisis de datos.
+              Combino habilidades técnicas en Python, HTML, CSS y MySQL con experiencia previa en gestión de proyectos y diseño gráfico.
+              Mi objetivo es aportar soluciones tecnológicas innovadoras y seguir desarrollándome en el ámbito de la programación y análisis de datos.
           </p>
-        </div>
-      </section>
+      </div>
+  </div>
+</section>
 
-      <!-- Mi proyectos en Git Hub -->
-      <section id="proyectos">
-        <div
-          class="container d-flex flex-column justify-content-center align-items-center"
-        >
-          <!-- Lana del rey -->
-          <div class="row proyectos-div">
-            <h2 class="text-center subtitulo">
-              Page Fan : Mi primer proyecto web
-            </h2>
-            <div class="col-md-6 mx-auto">
-              <img
-                src="images/laptop.png"
-                alt="Proyecto de pagina fan de Lana del Rey"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-12">
-              <a
-                href="https://jesicaacosta.github.io/LanadelRey/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="d-block text-center links"
-              >
-                <i class="fab fa-github"></i> Código en Git Hub
-              </a>
-              <a
-                href="https://jesicaacosta.github.io/FanPage-LanadelRey/"
-                target="_blank"
-                class="d-block text-center links"
-              >
-                <i class="fab fa-chrome"></i> Enlace a la Página
-              </a>
-            </div>
-          </div>
+<section class="cards_github">
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="..." alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
 
-          <!--JS Devs -->
+</section>
 
-          <div class="row proyectos-div">
-            <h2 class="text-center subtitulo">Recursos para Javascript</h2>
-            <div class="col-md-6 mx-auto">
-              <img
-                src="images/laptop - copia.jpg"
-                alt="Proyecto de pagina de recursos para Javascript"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-          <div class="row mt-3">
-            <div class="col-md-12">
-              <a
-                href="https://jesicaacosta.github.io/colores"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="d-block text-center links"
-              >
-                <i class="fab fa-github"></i> Código en Git Hub
-              </a>
-              <a
-                href="https://jesicaacosta.github.io/Pagina-Javascript/"
-                target="_blank"
-                class="d-block text-center links"
-              >
-                <i class="fab fa-chrome"></i> Enlace a la Página
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="frase text-center">
-        <p>
-          "Mi compromiso con el aprendizaje continuo refleja mi dedicación a
-          contribuir al futuro de la tecnología"
-        </p>
-      </section>
-
-      <!-- Formación -->
-      <hr id="estudios" />
-
-      <section class="container-fluid seccion-exper">
-        <div class="row d-flex flex-row justify-content-center">
-          <div class="columna-exp col mb-3 mr-3">
-            <h2 class="subtitulo">🤖 Estudios</h2>
-            <span class="badge bg-black mb-3">
-              🔋 INGENIERIA EN MECATRÓNICA</span
-            >
-            <p>Univ. Nacional de Lomas de Zamora</p>
-            <div class="badge bg-black mb-3">🔋 TECN. EN PROGRAMACIÓN</div>
-            <p>Univ. Tecnológica Nacional (UTN)</p>
-          </div>
-
-          <!-- Lenguajes de Programación -->
-          <div class="columna-exp row">
-            <h2 class="subtitulo">🤖 LENGUAJES </h2>
-            <br />
-            <div class="exp-badge-contenedor">
-              <span class="badge bg-black">HTML Y CSS</span>
-              <span class="badge bg-black">Python</span>
-              <span class="badge bg-black">Javascript</span>
-              <span class="badge bg-black">Bootstrap</span>
-              <h2 class="subtitulo">🤖 INCRUSIONANDO EN:</h2>
-              <span class="badge bg-black">MySQL</span>
-              <span class="badge bg-black">Jupyter</span>
-              <h2 class="subtitulo">CURSANDO:</h2>
-              <span class="badge bg-black">Diseño UX/UI</span>
-            </div>
-          </div>
-      </section>
-
-      <hr id="experienciaLab" />
-      <!-- Experiencia Laboral -->
-      <div
-        class="columna-exp col d-flex flex-column justify-content-center align-items-center mr-3"
-      >
-        <h2 class="subtitulo">🤖 Experiencia laboral</h2>
-        <br />
-        <span class="badge bg-black">MOON AGENDAS</span>
-        <p>
-          Diseño para maquetación vectorial. Envíos y coordinación de pedidos
-        </p>
-        <span class="badge bg-black">STAFF TECHNOLOGY</span>
-        <p>
-          Atención a clientes por reclamos o instalaciones del servicio. <br />
-          Llamadas salientes para ofrecer el servicio.
-        </p>
-        <span class="badge bg-black">LÓPEZ DIGITAL </span>
-        <p>Atención en local comercial.</p>
+<!-- Estudios -->
+      <div class="container-fluid"  id="estudios" >
+        <h2 class="subtitulos">Estudios</h2>
+        <ul class="list-unstyled">
+          <li class="mb-3">
+            <h5>Técnica Universitaria en Programación - Graduada 👩‍🎓 </h5>
+            <p>Uaniversidad Tecnológica Nacional (UTN)</p>
+          </li>
+          <li>
+            <h5>Cursando Ingeniería en Mecatrónica</h5>
+            <p>Universidad Nacional de Lomas de Zamora</p>
+          </li>
+        </ul>
       </div>
 
-      <section class="formulario" id="contacto">
-        <h2 class="subtitulo">Contactame</h2>
-        <br />
-        <div
-          class="row d-flex flex-row justify-content-center align-items-center"
-        >
-          <div class="col contactForm">
-            <form id="contactForm">
-              <label for="name">Tu nombre: </label>
-              <input type="text" id="name" name="name" required />
-
-              <label for="email">Un Correo Electrónico:</label>
-              <input type="email" id="email" name="email" required />
-
-              <label for="message">Dejame un mensaje:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-              ></textarea>
-
-              <button
-                type="button"
-                onclick="enviarMensaje()"
-                class="contactForm_button"
-                id="enviarBtn"
-              >
-                Enviar
-              </button>
-              <button
-                type="button"
-                onclick="resetearFormulario()"
-                class="contactForm_button"
-                id="resetBtn"
-              >
-                Reset
-              </button>
-            </form>
+        <!-- Experiencia laboral -->
+        <section id="experiencia" class="py-3">
+          <div class="container-fluid">
+            <h2 class="subtitulos">Experiencia Laboral</h2>
+            <ul class="list-unstyled">
+              <li class="mb-4">
+                <h5 class="sub_h5">Galaxy Fotografía (2018 - 2023)</h5>
+                <p>Coordinación y gestión: Organización de agendas para fotógrafos y coordinación de envíos de productos terminados. <br>
+                  Atención al cliente: Recepción de clientes, presentación de productos y servicios, seguimiento de ventas, y gestión de pagos (en cuotas, con tarjeta, entre otros). <br>
+                  Relación con proveedores: Negociación de acuerdos, gestión de pagos y comunicación efectiva. <br>
+                  Gestión administrativa: Creación y actualización de planillas de costos y gastos, seguimiento de presupuestos y administración de pagos. <br>
+                  Diseño gráfico: Elaboración de materiales visuales utilizando Photoshop e Illustrator. <br>
+                  </p>
+              </li>
+              <li class="mb-4">
+                <h5 class="sub_h5">Look Clothing - Empleada (Enero 2022 - Noviembre 2023) </h5>
+                <p>Control de stock y organización logística. <br>
+                  Implementación de mejoras en procesos de inventario. <br>
+                  Gestión de tareas generales de orden y limpieza. <br>
+                  </p>
+              </li>
+              <li>
+                <h5 class="sub_h5">Activo Contact Center - Operadora Telefónica
+                  Junio 2015 - Agosto 2015
+                  </h5>
+                <p>Prospección de clientes y análisis de su interés en servicios. <br>
+                  Manejo de estrategias de comunicación efectiva.
+                  </p>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
 
-    <footer>
-      <div class="container text-center">
-        <div>
-          <img src="./images/chica.png" width="150px" alt="" /> <br />
-          <p>&copy; Jesica Acosta - Programadora</p>
-          <br />
+      <!-- Skills -->
+      <section class="container-fluid py-3" id="habilidades">
+        <h2 class="subtitulos">Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="sub_h5">Programming Languages</h5>
+                <ul>
+                    <li>🐍 Python</li>
+                    <li>🌐 HTML & CSS</li>
+                    <li>✨ JavaScript</li>
+                    <li>🛢️ MySQL</li>
+                    <li>🖥️ C</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h5 class="sub_h5">Tools & Libraries</h5>
+                <ul>
+                    <li>📓 Jupyter</li>
+                    <li>🎨 Bootstrap</li>
+                    <li>🖌️ Photoshop & Illustrator</li>
+                    <li>📊 Excel</li>
+                    <li>🧪 Pandas</li>
+                    <li>📈 Matplotlib</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/jesicadaiana/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
-          <a
-            href="https://github.com/jesicadaiana"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-        </div>
+    <!-- Contacto -->
+    <section id="contacto" class="py-5">
+      <div class="container-fluid">
+        <h2  class="subtitulos">Contacto</h2>
+        <p>¡Estoy emocionada de conectar contigo! Puedes contactarme a través de los siguientes medios:</p>
+        <ul class="list-unstyled">
+          <li><i class="bi bi-envelope"></i> <a href="mailto:ajesicadaiana@gmail.com">ajesicadaiana@gmail.com</a></li>
+          <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jesicadaiana/" target="_blank">LinkedIn</a></li>
+          <li><i class="bi bi-github"></i> <a href="https://github.com/jesicadaiana" target="_blank">GitHub</a></li>
+        </ul>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <!-- Javascript-->
-    <script src="script.js"></script>
-    <!--Bootstrap para JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Jesica Acosta - Programadora</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+
 </html>
