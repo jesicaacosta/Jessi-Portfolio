@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Fira Code', monospace;
 }
 
 body {
@@ -26,11 +27,13 @@ section {
     color: lightpink;
     display: block;
     font-size: 1.7em;
+    text-align: center;
 }
 .subtitulos {
     color: lightpink;
     display: block;
     font-size: 1.7em;
+    text-align: center;
 }
 li{
     color: #fff;
@@ -175,6 +178,9 @@ button:hover {
 .habilidades{
     border: 2px solid red;
 }
+
+
+
 /* Footer */
 footer {
     background-color: #252526;
@@ -192,4 +198,26 @@ footer {
 
 .social-icons a:hover {
     color: #dcdcaa;
+}
+
+
+/*CARDS*/ 
+
+.cards_github{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards_github .card {
+    text-align: center;
+    margin: 20px;
+    width: 40%;
+    min-width: 350px;
+    border: 2px solid rgb(208, 255, 0);
+    background-color: #555555;
+
 }
