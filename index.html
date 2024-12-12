@@ -16,7 +16,7 @@
 
   <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
@@ -54,13 +54,11 @@
       <img src="./images/arrow.png" id="scroll-to-top" alt="">
     </div>
 
-
-
     <!-- Sección principal -->
-    <section class="text-center py-5">
+    <section class="text-center py-5 section-princ">
       <div class="container">
         <img src="images/CV.png" alt="Jesica Acosta" class="rounded-circle mb-4" width="150">
-        <h1a class="titulos">Jesica Acosta</h1>
+        <h1 class="titulos ">Jesica Acosta</h1>
           <p class="lead">Programadora especializada en Python, MySQL y análisis de datos</p>
       </div>
     </section>
@@ -88,7 +86,7 @@
       <div class="row">
         <div class="col-md-6  py-3">
           <h5 class="sub_h5">Programming Languages</h5>
-          <ul>
+          <ul class="lista-m">
             <li>🐍 Python</li>
             <li>🌐 HTML & CSS</li>
             <li>✨ JavaScript</li>
@@ -97,8 +95,8 @@
           </ul>
         </div>
         <div class="col-md-6  py-3">
-          <h5 class="sub_h5">Tools & Libraries</h5>
-          <ul>
+          <h5 class="sub_h5">Herramientas y Librerias</h5>
+          <ul class="lista-l">
             <li>📓 Jupyter</li>
             <li>🎨 Bootstrap</li>
             <li>🖌️ Photoshop & Illustrator</li>
@@ -113,9 +111,10 @@
     <section class="cards_github">
 
       <div class="card">
-        <img class="card-img-top" src="./images/datac.png" alt="Card image cap">
+        <a href="https://github.com/jesicaacosta/DataScience" target="_blank"><img class="card-img-top"
+            src="./images/datac.png" alt="Card image cap"> </a>
         <div class="card-body">
-          <h1 class="sub_h5"> Data Clarity </h1>
+          <h1 class="subtitulos"> Data Clarity </h1>
           <p class="card-text">"Data Clarity" es una aplicación web desarrollada con Python, Flask, Jinja, HTML y CSS.
             Permite a los usuarios cargar datos tabulares (en formatos como Excel, CSV o JSON) para obtener estadísticas
             básicas, una vista previa de los datos subidos y la posibilidad de generar gráficos personalizados
@@ -123,9 +122,10 @@
         </div>
       </div>
       <div class="card">
-        <img class="card-img-top" src="./images/biblio.png" alt="Card image cap">
+        <a href="https://github.com/jesicaacosta/Biblioteca_" target="_blank"><img class="card-img-top"
+            src="./images/biblio.png" alt="Card image cap"></a>
         <div class="card-body">
-          <h1 class="sub_h5"> Biblioteca Personal </h1>
+          <h1 class="subtitulos"> Biblioteca Personal </h1>
           <p class="card-text">Desarrollada con Python, Flask y Jinja, esta aplicación permite a los usuarios gestionar
             reseñas de libros mediante funcionalidades CRUD (crear, leer, actualizar y eliminar), conectada a una base
             de datos para persistencia de datos. Además, integra la API de Google Books para obtener información
@@ -157,7 +157,7 @@
         <h2 class="subtitulos">Experiencia Laboral</h2>
         <ul class="list-unstyled">
           <li class="mb-4">
-            <h5 class="sub_h5">Galaxy Fotografía (2018 - 2023)</h5>
+            <h5 class="sub_h5 li-trabajos">Galaxy Fotografía (2018 - 2023)</h5>
             <p>Coordinación y gestión: Organización de agendas para fotógrafos y coordinación de envíos de productos
               terminados. <br>
               Atención al cliente: Recepción de clientes, presentación de productos y servicios, seguimiento de ventas,
@@ -167,16 +167,16 @@
               presupuestos y administración de pagos. <br>
               Diseño gráfico: Elaboración de materiales visuales utilizando Photoshop e Illustrator. <br>
             </p>
-          </li>
+          </li> <!--
           <li class="mb-4">
             <h5 class="sub_h5">Look Clothing - Empleada (Enero 2022 - Noviembre 2023) </h5>
             <p>Control de stock y organización logística. <br>
               Implementación de mejoras en procesos de inventario. <br>
               Gestión de tareas generales de orden y limpieza. <br>
             </p>
-          </li>
+          </li> -->
           <li>
-            <h5 class="sub_h5">Activo Contact Center - Operadora Telefónica
+            <h5 class="sub_h5 li-trabajos">Activo Contact Center - Operadora Telefónica
               Junio 2015 - Agosto 2015
             </h5>
             <p>Prospección de clientes y análisis de su interés en servicios. <br>

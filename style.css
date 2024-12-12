@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Fira Code', monospace;
+    font-family: "Lato", serif;
 }
 
 body {
@@ -15,7 +15,6 @@ body {
 }
 
 section {
-    border-top: 2px solid #fa58bc;
     margin: 50px auto;
 }
 
@@ -23,13 +22,19 @@ section {
     color: lightcyan;
     display: block;
     font-size: 1.1em;
+    font-weight: 700;
+    font-family: 'Fira Code', monospace;
+
 }
 
 .titulos {
-    color: lightpink;
+    color: #fa58bc;
     display: block;
-    font-size: 1.7em;
+    font-size: 2.5em;
     text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .subtitulos {
@@ -37,6 +42,8 @@ section {
     display: block;
     font-size: 1.7em;
     text-align: center;
+    font-family: 'Fira Code', monospace;
+
 }
 
 li {
@@ -117,26 +124,6 @@ a:hover {
 
 
 
-/* Animación del texto */
-.animado {
-    font-size: 2.5em;
-    font-weight: bold;
-    background: linear-gradient(90deg, #569cd6, #dcdcaa, #c586c0);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: text-flow 5s infinite;
-}
-
-@keyframes text-flow {
-    0% {
-        background-position: 0%;
-    }
-
-    100% {
-        background-position: 200%;
-    }
-}
 
 /* Formularios */
 form {
@@ -190,6 +177,24 @@ button:hover {
 }
 
 
+.lista-m {
+    border-right: 2px solid #c586c0;
+    text-align: justify;
+}
+
+.lista-m li:hover {
+    background-color: #fa58bc;
+}
+
+.lista-l {
+    text-align: justify;
+}
+
+.lista-l li:hover {
+    background-color: orangered;
+}
+
+
 
 /* Footer */
 footer {
@@ -229,5 +234,12 @@ footer {
     min-width: 350px;
     border: 2px solid rgb(208, 255, 0);
     background-color: #3b3b3b;
+    height: 600px;
+}
 
+.li-trabajos {
+    background-color: #262626;
+    padding: 4px;
+    color: #0099ff;
+    border-bottom: 2px solid palevioletred;
 }
