@@ -21,7 +21,8 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
   <!-- Iconos Awesome -->
@@ -49,134 +50,154 @@
   </nav>
 
   <main>
+    <div>
+      <img src="./images/arrow.png" id="scroll-to-top" alt="">
+    </div>
+
+
+
     <!-- Sección principal -->
     <section class="text-center py-5">
       <div class="container">
         <img src="images/CV.png" alt="Jesica Acosta" class="rounded-circle mb-4" width="150">
         <h1a class="titulos">Jesica Acosta</h1>
-        <p class="lead">Programadora especializada en Python, MySQL y análisis de datos</p>
+          <p class="lead">Programadora especializada en Python, MySQL y análisis de datos</p>
       </div>
     </section>
 
-<!-- Sobre mí -->
-<section id="sobremi" class="py-3">
-  <h2 class="subtitulos">Sobre mí</h2>
-  <div class="container-fluid sobre-mi d-flex align-items-center">
-      <div class="txt-sobremi">
+    <!-- Sobre mí -->
+    <section id="sobremi" class="py-3">
+      <h2 class="subtitulos">Sobre mí</h2>
+      <div class="container-fluid sobre-mi d-flex align-items-center">
+        <div class="txt-sobremi">
           <p>
-              Programadora recibida en Universidad Tecnológica Nacional con experiencia en desarrollo de software y análisis de datos.
-              Combino habilidades técnicas en Python, HTML, CSS y MySQL con experiencia previa en gestión de proyectos y diseño gráfico.
-              Mi objetivo es aportar soluciones tecnológicas innovadoras y seguir desarrollándome en el ámbito de la programación y análisis de datos.
+            Programadora recibida en Universidad Tecnológica Nacional con experiencia en desarrollo de software y
+            análisis de datos.
+            Combino habilidades técnicas en Python, HTML, CSS y MySQL con experiencia previa en gestión de proyectos y
+            diseño gráfico.
+            Mi objetivo es aportar soluciones tecnológicas innovadoras y seguir desarrollándome en el ámbito de la
+            programación y análisis de datos.
           </p>
-      </div>
-  </div>
-</section>
-
-      <!-- Skills -->
-      <section class="container-fluid py-3" id="habilidades">
-        <h2 class="subtitulos">Skills</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <h5 class="sub_h5">Programming Languages</h5>
-                <ul>
-                    <li>🐍 Python</li>
-                    <li>🌐 HTML & CSS</li>
-                    <li>✨ JavaScript</li>
-                    <li>🛢️ MySQL</li>
-                    <li>🖥️ C</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h5 class="sub_h5">Tools & Libraries</h5>
-                <ul>
-                    <li>📓 Jupyter</li>
-                    <li>🎨 Bootstrap</li>
-                    <li>🖌️ Photoshop & Illustrator</li>
-                    <li>📊 Excel</li>
-                    <li>🧪 Pandas</li>
-                    <li>📈 Matplotlib</li>
-                </ul>
-            </div>
         </div>
+      </div>
     </section>
 
-<section class="cards_github">
+    <!-- Skills -->
+    <section class="container-fluid py-3" id="habilidades">
+      <h2 class="subtitulos">Skills</h2>
+      <div class="row">
+        <div class="col-md-6  py-3">
+          <h5 class="sub_h5">Programming Languages</h5>
+          <ul>
+            <li>🐍 Python</li>
+            <li>🌐 HTML & CSS</li>
+            <li>✨ JavaScript</li>
+            <li>🛢️ MySQL</li>
+            <li>🖥️ C</li>
+          </ul>
+        </div>
+        <div class="col-md-6  py-3">
+          <h5 class="sub_h5">Tools & Libraries</h5>
+          <ul>
+            <li>📓 Jupyter</li>
+            <li>🎨 Bootstrap</li>
+            <li>🖌️ Photoshop & Illustrator</li>
+            <li>📊 Excel</li>
+            <li>🧪 Pandas</li>
+            <li>📈 Matplotlib</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <div class="card" >
-    <img class="card-img-top" src="./images/datac.png" alt="Card image cap">
-    <div class="card-body">
-      <h1  class="sub_h5"> Data Clarity </h1>
-      <p class="card-text">"Data Clarity" es una aplicación web desarrollada con Python, Flask, Jinja, HTML y CSS. Permite a los usuarios cargar datos tabulares (en formatos como Excel, CSV o JSON) para obtener estadísticas básicas, una vista previa de los datos subidos y la posibilidad de generar gráficos personalizados seleccionando columnas específicas para su análisis.</p>
+    <section class="cards_github">
+
+      <div class="card">
+        <img class="card-img-top" src="./images/datac.png" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="sub_h5"> Data Clarity </h1>
+          <p class="card-text">"Data Clarity" es una aplicación web desarrollada con Python, Flask, Jinja, HTML y CSS.
+            Permite a los usuarios cargar datos tabulares (en formatos como Excel, CSV o JSON) para obtener estadísticas
+            básicas, una vista previa de los datos subidos y la posibilidad de generar gráficos personalizados
+            seleccionando columnas específicas para su análisis.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="./images/biblio.png" alt="Card image cap">
+        <div class="card-body">
+          <h1 class="sub_h5"> Biblioteca Personal </h1>
+          <p class="card-text">Desarrollada con Python, Flask y Jinja, esta aplicación permite a los usuarios gestionar
+            reseñas de libros mediante funcionalidades CRUD (crear, leer, actualizar y eliminar), conectada a una base
+            de datos para persistencia de datos. Además, integra la API de Google Books para obtener información
+            adicional sobre libros y enriquecer la experiencia del usuario. Utiliza HTML y CSS para la interfaz,
+            ofreciendo un diseño intuitivo y funcional.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Estudios -->
+    <div class="container-fluid" id="estudios">
+      <h2 class="subtitulos">Estudios</h2>
+      <ul class="list-unstyled">
+        <li class="mb-3">
+          <h5>Técnica Universitaria en Programación - Graduada 👩‍🎓 </h5>
+          <p>Uaniversidad Tecnológica Nacional (UTN)</p>
+        </li>
+        <li>
+          <h5>Cursando Ingeniería en Mecatrónica</h5>
+          <p>Universidad Nacional de Lomas de Zamora</p>
+        </li>
+      </ul>
     </div>
-  </div>
-  <div class="card" >
-    <img class="card-img-top" src="./images/biblio.png" alt="Card image cap">
-    <div class="card-body">
-      <h1  class="sub_h5"> Biblioteca Personal </h1>
-      <p class="card-text">Desarrollada con Python, Flask y Jinja, esta aplicación permite a los usuarios gestionar reseñas de libros mediante funcionalidades CRUD (crear, leer, actualizar y eliminar), conectada a una base de datos para persistencia de datos. Además, integra la API de Google Books para obtener información adicional sobre libros y enriquecer la experiencia del usuario. Utiliza HTML y CSS para la interfaz, ofreciendo un diseño intuitivo y funcional.</p>
-    </div>
-  </div>
 
-</section>
-
-<!-- Estudios -->
-      <div class="container-fluid"  id="estudios" >
-        <h2 class="subtitulos">Estudios</h2>
+    <!-- Experiencia laboral -->
+    <section id="experiencia" class="py-3">
+      <div class="container-fluid">
+        <h2 class="subtitulos">Experiencia Laboral</h2>
         <ul class="list-unstyled">
-          <li class="mb-3">
-            <h5>Técnica Universitaria en Programación - Graduada 👩‍🎓 </h5>
-            <p>Uaniversidad Tecnológica Nacional (UTN)</p>
+          <li class="mb-4">
+            <h5 class="sub_h5">Galaxy Fotografía (2018 - 2023)</h5>
+            <p>Coordinación y gestión: Organización de agendas para fotógrafos y coordinación de envíos de productos
+              terminados. <br>
+              Atención al cliente: Recepción de clientes, presentación de productos y servicios, seguimiento de ventas,
+              y gestión de pagos (en cuotas, con tarjeta, entre otros). <br>
+              Relación con proveedores: Negociación de acuerdos, gestión de pagos y comunicación efectiva. <br>
+              Gestión administrativa: Creación y actualización de planillas de costos y gastos, seguimiento de
+              presupuestos y administración de pagos. <br>
+              Diseño gráfico: Elaboración de materiales visuales utilizando Photoshop e Illustrator. <br>
+            </p>
+          </li>
+          <li class="mb-4">
+            <h5 class="sub_h5">Look Clothing - Empleada (Enero 2022 - Noviembre 2023) </h5>
+            <p>Control de stock y organización logística. <br>
+              Implementación de mejoras en procesos de inventario. <br>
+              Gestión de tareas generales de orden y limpieza. <br>
+            </p>
           </li>
           <li>
-            <h5>Cursando Ingeniería en Mecatrónica</h5>
-            <p>Universidad Nacional de Lomas de Zamora</p>
+            <h5 class="sub_h5">Activo Contact Center - Operadora Telefónica
+              Junio 2015 - Agosto 2015
+            </h5>
+            <p>Prospección de clientes y análisis de su interés en servicios. <br>
+              Manejo de estrategias de comunicación efectiva.
+            </p>
           </li>
         </ul>
       </div>
-
-        <!-- Experiencia laboral -->
-        <section id="experiencia" class="py-3">
-          <div class="container-fluid">
-            <h2 class="subtitulos">Experiencia Laboral</h2>
-            <ul class="list-unstyled">
-              <li class="mb-4">
-                <h5 class="sub_h5">Galaxy Fotografía (2018 - 2023)</h5>
-                <p>Coordinación y gestión: Organización de agendas para fotógrafos y coordinación de envíos de productos terminados. <br>
-                  Atención al cliente: Recepción de clientes, presentación de productos y servicios, seguimiento de ventas, y gestión de pagos (en cuotas, con tarjeta, entre otros). <br>
-                  Relación con proveedores: Negociación de acuerdos, gestión de pagos y comunicación efectiva. <br>
-                  Gestión administrativa: Creación y actualización de planillas de costos y gastos, seguimiento de presupuestos y administración de pagos. <br>
-                  Diseño gráfico: Elaboración de materiales visuales utilizando Photoshop e Illustrator. <br>
-                  </p>
-              </li>
-              <li class="mb-4">
-                <h5 class="sub_h5">Look Clothing - Empleada (Enero 2022 - Noviembre 2023) </h5>
-                <p>Control de stock y organización logística. <br>
-                  Implementación de mejoras en procesos de inventario. <br>
-                  Gestión de tareas generales de orden y limpieza. <br>
-                  </p>
-              </li>
-              <li>
-                <h5 class="sub_h5">Activo Contact Center - Operadora Telefónica
-                  Junio 2015 - Agosto 2015
-                  </h5>
-                <p>Prospección de clientes y análisis de su interés en servicios. <br>
-                  Manejo de estrategias de comunicación efectiva.
-                  </p>
-              </li>
-            </ul>
-          </div>
-        </section>
+    </section>
 
 
 
     <!-- Contacto -->
     <section id="contacto" class="py-5">
       <div class="container-fluid">
-        <h2  class="subtitulos">Contacto</h2>
+        <h2 class="subtitulos">Contacto</h2>
         <p>¡Estoy emocionada de conectar contigo! Puedes contactarme a través de los siguientes medios:</p>
         <ul class="list-unstyled">
           <li><i class="bi bi-envelope"></i> <a href="mailto:ajesicadaiana@gmail.com">ajesicadaiana@gmail.com</a></li>
-          <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jesicadaiana/" target="_blank">LinkedIn</a></li>
+          <li><i class="bi bi-linkedin"></i> <a href="https://www.linkedin.com/in/jesicadaiana/"
+              target="_blank">LinkedIn</a></li>
           <li><i class="bi bi-github"></i> <a href="https://github.com/jesicadaiana" target="_blank">GitHub</a></li>
         </ul>
       </div>
@@ -188,7 +209,13 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+
+  <!--Javascript-->
+  <script src="script.js"></script>
+
+
 </body>
 
 </html>
