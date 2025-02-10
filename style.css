@@ -9,23 +9,18 @@
 body {
     background-color: #000;
     font-family: 'Fira Code', monospace;
-    color: #d4d4d4;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
 section {
-    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #000;
 }
 
-.sub_h5 {
-    color: lightcyan;
-    display: block;
-    font-size: 1.1em;
-    font-weight: 700;
-    font-family: 'Fira Code', monospace;
-
+main {
+    background-color: #000;
 }
+/*Estilos generales */
 
 .titulos {
     color: #fa58bc;
@@ -37,13 +32,29 @@ section {
     font-style: normal;
 }
 
-.subtitulos {
-    color: lightpink;
+
+.subtitulos-h2 {
+    color: #d0ff00;
     display: block;
     font-size: 1.7em;
     text-align: center;
     font-family: 'Fira Code', monospace;
+}
 
+.subtitulos-h3 {
+    color: #fa58bc;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Fira Code', monospace;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #d0ff00;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 li {
@@ -57,15 +68,8 @@ i {
     margin: 0 3px;
 }
 
-main {
-    padding: 20px;
-    background: #000000e6;
-    border-radius: 10px;
-}
-
 p {
     font-size: 16px;
-    margin-bottom: 15px;
     color: #ffffff;
 }
 
@@ -97,6 +101,7 @@ a:hover {
     gap: 15px;
 }
 
+/* Logo */
 .lead {
     color: lightgoldenrodyellow;
 }
@@ -112,7 +117,7 @@ a:hover {
     display: none;
     /* Oculto inicialmente */
     cursor: pointer;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.9s ease-in-out;
 }
 
 #scroll-to-top.show {
@@ -122,64 +127,74 @@ a:hover {
 }
 
 
+/*HABILIDADES Custom box*/
 
-
-
-/* Formularios */
-form {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #2d2d2d;
+.custom-box {
+    position: relative;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    gap: 12px;
     border-radius: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #dcdcaa;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #1e1e1e;
-    border: 1px solid #3c3c3c;
-    color: #d4d4d4;
-    border-radius: 5px;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
-    border-color: #569cd6;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #007acc;
-    border: none;
-    border-radius: 5px;
-    color: #ffffff;
-    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    overflow: hidden;
 }
 
-button:hover {
-    background-color: #569cd6;
+.custom-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 230px;
+    height: 290px;
+    border-radius: 12px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.habilidades {
-    border: 2px solid red;
+.custom-box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
 }
+
+.custom-heading {
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #a086ff;
+}
+
+
+.custom-box p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+}
+
+.custom-box:hover::after {
+    filter: blur(30px);
+}
+
+.custom-box:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+    
+}
+
 
 
 .lista-m {
     border-right: 2px solid #c586c0;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 .lista-m li:hover {
@@ -187,12 +202,226 @@ button:hover {
 }
 
 .lista-l {
-    text-align: justify;
+    text-align: left;
+    font-size: 1.2em;
 }
 
 .lista-l li:hover {
     background-color: orangered;
+    color: #000;
 }
+
+
+/*Estudios */
+
+.section-estudios {
+    padding: 40px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 8px;
+    max-width: 70vw;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d0ff00;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.list-unstyled {
+    padding-left: 0;
+}
+
+.list-unstyled li {
+    margin-bottom: 20px;
+}
+
+.list-unstyled h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #a086ff;
+    margin-bottom: 5px;
+}
+
+.list-unstyled p {
+    font-size: 16px;
+}
+
+
+
+/*CARDS*/
+
+.cards_github {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.cards_github .card {
+    text-align: center;
+    margin : auto 20px;
+    width: 40%;
+    height: 70vh;
+    overflow-y: auto;
+    min-width: 350px;
+    background-color: #1a1a1a;
+    border-right: 5px solid #00dbde;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.cards_github .card:hover {
+    transform: translateY(-5px);
+    border-right: 3px solid #a086ff;
+}
+
+
+
+/*EXPERIENCIA */
+.experience-container {
+    display: grid;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background-color: #1a1a1a;
+    border-left: 5px solid #fa58bc;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    background-color: #2c2c2c;
+    transform: translateY(-5px);
+    border-left-color: #d0ff00;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    color: #fa58bc;
+    margin-bottom: 10px;
+}
+
+.job-title span {
+    color: #d0ff00;
+}
+
+.job-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/*Sobre mi*/
+
+.section-sobremi {
+    width: 70vw;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.section-sobremi:hover {
+    transform: scale(1.02);
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d0ff00;
+    border-bottom: 2px solid #fa58bc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sobremi-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.highlight {
+    color: #d0ff00;
+    font-weight: bold;
+}
+
+
+
+/*CONTACTO*/
+
+.form-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d0ff00;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fa58bc;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #d0ff00;
+    outline: none;
+}
+
+.submit-button {
+    background: linear-gradient(45deg, #fa58bc, #d0ff00);
+    color: #000;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(45deg, #d0ff00, #fa58bc);
+}
+
+#form-status {
+    margin-top: 10px;
+    font-weight: bold;
+    display: none;
+}
+
+
+
 
 
 
@@ -213,33 +442,4 @@ footer {
 
 .social-icons a:hover {
     color: #dcdcaa;
-}
-
-
-/*CARDS*/
-
-.cards_github {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards_github .card {
-    text-align: center;
-    margin: 20px;
-    width: 40%;
-    min-width: 350px;
-    border: 2px solid rgb(208, 255, 0);
-    background-color: #3b3b3b;
-    height: 600px;
-}
-
-.li-trabajos {
-    background-color: #262626;
-    padding: 4px;
-    color: #0099ff;
-    border-bottom: 2px solid palevioletred;
 }

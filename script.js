@@ -1,52 +1,32 @@
 // script.js
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Agregar un evento de clic al botón "Enviar"
-    document.getElementById("enviarBtn").addEventListener("click", function () {
-        enviarMensaje();
-    });
 
-    // Agregar un evento de clic al botón "Restablecer"
-    document.getElementById("resetBtn").addEventListener("click", function () {
-        resetearFormulario();
-    });
-});
+// FOERMULARIO DE CONTACTO
 
-function enviarMensaje() {
-    // Código para enviar el mensaje, como se mencionó anteriormente
-    var nombre = document.getElementById("name").value;
-    var correo = document.getElementById("email").value;
-    var mensaje = document.getElementById("message").value;
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita el envío real del formulario para validar q los campos esten completos
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const formStatus = document.getElementById('form-status');
+  
+    if (name === "" || email === "" || subject === "" || message === "") {
+      formStatus.textContent = "⚠️ Por favor, completá todos los campos.";
+      formStatus.style.color = "#fa58bc";
+      formStatus.style.display = "block";
+      return;
+    }
+  
+    formStatus.textContent = "✅ ¡Mensaje enviado con éxito!";
+    formStatus.style.color = "#d0ff00";
+    formStatus.style.display = "block";
+  
+    // Limpiar el formulario
+    this.reset();
+  });
 
-    var formData = new FormData();
-    formData.append("name", nombre);
-    formData.append("email", correo);
-    formData.append("message", mensaje);
-
-    fetch("URL_DEL_SERVIDOR", {
-        method: "POST",
-        body: formData
-    })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Error en la solicitud");
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log("Mensaje enviado correctamente:", data);
-            // Puedes agregar aquí acciones adicionales, como mostrar un mensaje de éxito al usuario
-        })
-        .catch(error => {
-            console.error("Error al enviar el mensaje:", error);
-            // Puedes mostrar un mensaje de error al usuario o realizar acciones adicionales
-        });
-}
-
-function resetearFormulario() {
-    // Código para restablecer el formulario
-    document.getElementById("contactForm").reset();
-}
+  
 
 
 
